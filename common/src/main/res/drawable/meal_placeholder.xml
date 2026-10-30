@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="320dp" android:height="240dp" android:viewportWidth="320" android:viewportHeight="240">
+  <!-- Native vector transcription of UI Kit source/shared/app/meal-placeholder.svg. -->
+  <path android:fillColor="#eeeee8" android:pathData="M0,0h320v240H0z"/>
+  <path android:fillColor="#dfdfd5" android:pathData="M100,173a61,7 0,1 0,122 0a61,7 0,1 0,-122 0"/>
+  <path android:fillColor="#fafaf6" android:strokeColor="#cdcec2" android:strokeWidth="2" android:pathData="M105,119a55,55 0,1 0,110 0a55,55 0,1 0,-110 0"/>
+  <path android:fillColor="@android:color/transparent" android:strokeColor="#dedfd4" android:strokeWidth="2" android:pathData="M119,119a41,41 0,1 0,82 0a41,41 0,1 0,-82 0"/>
+  <path android:fillColor="@android:color/transparent" android:strokeColor="#a8ad99" android:strokeWidth="4" android:strokeLineCap="round" android:strokeLineJoin="round" android:pathData="M83,69v31c0,9 16,9 16,0V69m-8,0v106m143,0V69c-13,9 -14,34 0,39"/>
+  <path android:fillColor="#dce3ce" android:strokeColor="#a8ad99" android:strokeWidth="4" android:strokeLineCap="round" android:strokeLineJoin="round" android:pathData="M148,129c-1,-17 8,-27 25,-28c0,18 -9,29 -25,28Z"/>
+  <path android:fillColor="@android:color/transparent" android:strokeColor="#a8ad99" android:strokeWidth="4" android:strokeLineCap="round" android:pathData="M147,134l16,-21"/>
+</vector>

@@ -1,0 +1,1628 @@
+{
+  "schemaVersion": 1,
+  "version": "2026-10-22.2",
+  "description": "Suchbegriffe für Lebensmittel und Gerichte; keine Austausch-, Diät- oder Allergenfreigabe. Kategorien sind gerichtete Sucherweiterungen.",
+  "groups": [
+    {
+      "id": "chicken",
+      "terms": [
+        "Hähnchen",
+        "Hühnchen",
+        "Huhn",
+        "Hühner",
+        "Chicken",
+        "Poulet"
+      ]
+    },
+    {
+      "id": "turkey",
+      "terms": [
+        "Pute",
+        "Puten",
+        "Truthahn",
+        "Turkey"
+      ]
+    },
+    {
+      "id": "duck",
+      "terms": [
+        "Ente",
+        "Enten",
+        "Duck"
+      ]
+    },
+    {
+      "id": "goose",
+      "terms": [
+        "Gans",
+        "Gänse",
+        "Goose"
+      ]
+    },
+    {
+      "id": "beef",
+      "terms": [
+        "Rind",
+        "Rinder",
+        "Rindfleisch",
+        "Beef"
+      ]
+    },
+    {
+      "id": "pork",
+      "terms": [
+        "Schwein",
+        "Schweine",
+        "Schweinefleisch",
+        "Pork"
+      ]
+    },
+    {
+      "id": "lamb",
+      "terms": [
+        "Lamm",
+        "Lammfleisch",
+        "Lamb"
+      ]
+    },
+    {
+      "id": "mince",
+      "terms": [
+        "Hackfleisch",
+        "Hack",
+        "Faschiertes",
+        "minced meat"
+      ]
+    },
+    {
+      "id": "ham",
+      "terms": [
+        "Schinken",
+        "Ham"
+      ]
+    },
+    {
+      "id": "bacon",
+      "terms": [
+        "Speck",
+        "Bacon"
+      ]
+    },
+    {
+      "id": "sausage",
+      "terms": [
+        "Wurst",
+        "Würste",
+        "Würstchen",
+        "Sausage",
+        "Sausages"
+      ]
+    },
+    {
+      "id": "salmon",
+      "terms": [
+        "Lachs",
+        "Salmon"
+      ]
+    },
+    {
+      "id": "tuna",
+      "terms": [
+        "Thunfisch",
+        "Tuna"
+      ]
+    },
+    {
+      "id": "cod",
+      "terms": [
+        "Kabeljau",
+        "Dorsch",
+        "Cod"
+      ]
+    },
+    {
+      "id": "trout",
+      "terms": [
+        "Forelle",
+        "Forellen",
+        "Trout"
+      ]
+    },
+    {
+      "id": "prawn",
+      "terms": [
+        "Garnele",
+        "Garnelen",
+        "Shrimp",
+        "Shrimps",
+        "Prawn",
+        "Prawns"
+      ]
+    },
+    {
+      "id": "carrot",
+      "terms": [
+        "Karotte",
+        "Karotten",
+        "Möhre",
+        "Möhren",
+        "Carrot",
+        "Carrots"
+      ]
+    },
+    {
+      "id": "potato",
+      "terms": [
+        "Kartoffel",
+        "Kartoffeln",
+        "Erdapfel",
+        "Erdäpfel",
+        "Potato",
+        "Potatoes"
+      ]
+    },
+    {
+      "id": "sweetpotato",
+      "terms": [
+        "Süßkartoffel",
+        "Süßkartoffeln",
+        "Sweet Potato",
+        "Sweet Potatoes"
+      ]
+    },
+    {
+      "id": "tomato",
+      "terms": [
+        "Tomate",
+        "Tomaten",
+        "Paradeiser",
+        "Tomato",
+        "Tomatoes"
+      ]
+    },
+    {
+      "id": "aubergine",
+      "terms": [
+        "Aubergine",
+        "Auberginen",
+        "Melanzani",
+        "Eggplant"
+      ]
+    },
+    {
+      "id": "courgette",
+      "terms": [
+        "Zucchini",
+        "Zucchetti",
+        "Courgette"
+      ]
+    },
+    {
+      "id": "pepper",
+      "terms": [
+        "Paprika",
+        "Bell Pepper",
+        "Bell Peppers"
+      ]
+    },
+    {
+      "id": "broccoli",
+      "terms": [
+        "Brokkoli",
+        "Broccoli"
+      ]
+    },
+    {
+      "id": "cauliflower",
+      "terms": [
+        "Blumenkohl",
+        "Karfiol",
+        "Cauliflower"
+      ]
+    },
+    {
+      "id": "spinach",
+      "terms": [
+        "Spinat",
+        "Spinach"
+      ]
+    },
+    {
+      "id": "leek",
+      "terms": [
+        "Lauch",
+        "Porree",
+        "Leek",
+        "Leeks"
+      ]
+    },
+    {
+      "id": "springonion",
+      "terms": [
+        "Frühlingszwiebel",
+        "Frühlingszwiebeln",
+        "Lauchzwiebel",
+        "Lauchzwiebeln",
+        "Spring Onion",
+        "Spring Onions",
+        "Scallion",
+        "Scallions"
+      ]
+    },
+    {
+      "id": "onion",
+      "terms": [
+        "Zwiebel",
+        "Zwiebeln",
+        "Onion",
+        "Onions"
+      ]
+    },
+    {
+      "id": "garlic",
+      "terms": [
+        "Knoblauch",
+        "Garlic"
+      ]
+    },
+    {
+      "id": "celery",
+      "terms": [
+        "Sellerie",
+        "Celery"
+      ]
+    },
+    {
+      "id": "beetroot",
+      "terms": [
+        "Rote Bete",
+        "Rote Beete",
+        "Randen",
+        "Beetroot"
+      ]
+    },
+    {
+      "id": "cucumber",
+      "terms": [
+        "Gurke",
+        "Gurken",
+        "Cucumber",
+        "Cucumbers"
+      ]
+    },
+    {
+      "id": "pumpkin",
+      "terms": [
+        "Kürbis",
+        "Kürbisse",
+        "Pumpkin"
+      ]
+    },
+    {
+      "id": "cabbage",
+      "terms": [
+        "Weißkohl",
+        "Weißkraut",
+        "Weisskohl",
+        "Weisskraut",
+        "White Cabbage"
+      ]
+    },
+    {
+      "id": "redcabbage",
+      "terms": [
+        "Rotkohl",
+        "Blaukraut",
+        "Rotkraut",
+        "Red Cabbage"
+      ]
+    },
+    {
+      "id": "savoy",
+      "terms": [
+        "Wirsing",
+        "Wirz",
+        "Savoy Cabbage"
+      ]
+    },
+    {
+      "id": "brussels",
+      "terms": [
+        "Rosenkohl",
+        "Kohlsprossen",
+        "Brussels Sprouts"
+      ]
+    },
+    {
+      "id": "kale",
+      "terms": [
+        "Grünkohl",
+        "Kale"
+      ]
+    },
+    {
+      "id": "asparagus",
+      "terms": [
+        "Spargel",
+        "Asparagus"
+      ]
+    },
+    {
+      "id": "fennel",
+      "terms": [
+        "Fenchel",
+        "Fennel"
+      ]
+    },
+    {
+      "id": "radish",
+      "terms": [
+        "Radieschen",
+        "Radish",
+        "Radishes"
+      ]
+    },
+    {
+      "id": "rocket",
+      "terms": [
+        "Rucola",
+        "Rauke",
+        "Rocket",
+        "Arugula"
+      ]
+    },
+    {
+      "id": "lettuce",
+      "terms": [
+        "Kopfsalat",
+        "Lettuce"
+      ]
+    },
+    {
+      "id": "corn",
+      "terms": [
+        "Mais",
+        "Corn",
+        "Sweetcorn"
+      ]
+    },
+    {
+      "id": "pea",
+      "terms": [
+        "Erbse",
+        "Erbsen",
+        "Pea",
+        "Peas"
+      ]
+    },
+    {
+      "id": "chickpea",
+      "terms": [
+        "Kichererbse",
+        "Kichererbsen",
+        "Chickpea",
+        "Chickpeas"
+      ]
+    },
+    {
+      "id": "lentil",
+      "terms": [
+        "Linse",
+        "Linsen",
+        "Lentil",
+        "Lentils"
+      ]
+    },
+    {
+      "id": "bean",
+      "terms": [
+        "Bohne",
+        "Bohnen",
+        "Bean",
+        "Beans"
+      ]
+    },
+    {
+      "id": "mushroom",
+      "terms": [
+        "Champignon",
+        "Champignons",
+        "Button Mushroom",
+        "Button Mushrooms"
+      ]
+    },
+    {
+      "id": "porcini",
+      "terms": [
+        "Steinpilz",
+        "Steinpilze",
+        "Porcini"
+      ]
+    },
+    {
+      "id": "chanterelle",
+      "terms": [
+        "Pfifferling",
+        "Pfifferlinge",
+        "Eierschwammerl",
+        "Chanterelle"
+      ]
+    },
+    {
+      "id": "shiitake",
+      "terms": [
+        "Shiitake"
+      ]
+    },
+    {
+      "id": "apple",
+      "terms": [
+        "Apfel",
+        "Äpfel",
+        "Apple",
+        "Apples"
+      ]
+    },
+    {
+      "id": "pear",
+      "terms": [
+        "Birne",
+        "Birnen",
+        "Pear",
+        "Pears"
+      ]
+    },
+    {
+      "id": "banana",
+      "terms": [
+        "Banane",
+        "Bananen",
+        "Banana",
+        "Bananas"
+      ]
+    },
+    {
+      "id": "strawberry",
+      "terms": [
+        "Erdbeere",
+        "Erdbeeren",
+        "Strawberry",
+        "Strawberries"
+      ]
+    },
+    {
+      "id": "raspberry",
+      "terms": [
+        "Himbeere",
+        "Himbeeren",
+        "Raspberry",
+        "Raspberries"
+      ]
+    },
+    {
+      "id": "blueberry",
+      "terms": [
+        "Heidelbeere",
+        "Heidelbeeren",
+        "Blaubeere",
+        "Blaubeeren",
+        "Blueberry",
+        "Blueberries"
+      ]
+    },
+    {
+      "id": "blackberry",
+      "terms": [
+        "Brombeere",
+        "Brombeeren",
+        "Blackberry",
+        "Blackberries"
+      ]
+    },
+    {
+      "id": "currant",
+      "terms": [
+        "Johannisbeere",
+        "Johannisbeeren",
+        "Ribisel",
+        "Currant",
+        "Currants"
+      ]
+    },
+    {
+      "id": "apricot",
+      "terms": [
+        "Aprikose",
+        "Aprikosen",
+        "Marille",
+        "Marillen",
+        "Apricot",
+        "Apricots"
+      ]
+    },
+    {
+      "id": "peach",
+      "terms": [
+        "Pfirsich",
+        "Pfirsiche",
+        "Peach",
+        "Peaches"
+      ]
+    },
+    {
+      "id": "plum",
+      "terms": [
+        "Pflaume",
+        "Pflaumen",
+        "Plum",
+        "Plums"
+      ]
+    },
+    {
+      "id": "damson",
+      "terms": [
+        "Zwetschge",
+        "Zwetschgen",
+        "Zwetschke",
+        "Zwetschken",
+        "Damson"
+      ]
+    },
+    {
+      "id": "cherry",
+      "terms": [
+        "Kirsche",
+        "Kirschen",
+        "Cherry",
+        "Cherries"
+      ]
+    },
+    {
+      "id": "lemon",
+      "terms": [
+        "Zitrone",
+        "Zitronen",
+        "Lemon",
+        "Lemons"
+      ]
+    },
+    {
+      "id": "lime",
+      "terms": [
+        "Limette",
+        "Limetten",
+        "Lime",
+        "Limes"
+      ]
+    },
+    {
+      "id": "orange",
+      "terms": [
+        "Orange",
+        "Orangen",
+        "Apfelsine",
+        "Apfelsinen",
+        "Oranges"
+      ]
+    },
+    {
+      "id": "grape",
+      "terms": [
+        "Traube",
+        "Trauben",
+        "Weintraube",
+        "Weintrauben",
+        "Grape",
+        "Grapes"
+      ]
+    },
+    {
+      "id": "date",
+      "terms": [
+        "Dattel",
+        "Datteln",
+        "Date",
+        "Dates"
+      ]
+    },
+    {
+      "id": "raisin",
+      "terms": [
+        "Rosine",
+        "Rosinen",
+        "Raisin",
+        "Raisins"
+      ]
+    },
+    {
+      "id": "fig",
+      "terms": [
+        "Feige",
+        "Feigen",
+        "Fig",
+        "Figs"
+      ]
+    },
+    {
+      "id": "pineapple",
+      "terms": [
+        "Ananas",
+        "Pineapple"
+      ]
+    },
+    {
+      "id": "mango",
+      "terms": [
+        "Mango",
+        "Mangos",
+        "Mangoes"
+      ]
+    },
+    {
+      "id": "avocado",
+      "terms": [
+        "Avocado",
+        "Avocados"
+      ]
+    },
+    {
+      "id": "coconut",
+      "terms": [
+        "Kokosnuss",
+        "Kokosnüsse",
+        "Coconut",
+        "Coconuts"
+      ]
+    },
+    {
+      "id": "walnut",
+      "terms": [
+        "Walnuss",
+        "Walnüsse",
+        "Walnusskerne",
+        "Walnut",
+        "Walnuts"
+      ]
+    },
+    {
+      "id": "hazelnut",
+      "terms": [
+        "Haselnuss",
+        "Haselnüsse",
+        "Hazelnut",
+        "Hazelnuts"
+      ]
+    },
+    {
+      "id": "almond",
+      "terms": [
+        "Mandel",
+        "Mandeln",
+        "Almond",
+        "Almonds"
+      ]
+    },
+    {
+      "id": "cashew",
+      "terms": [
+        "Cashew",
+        "Cashews",
+        "Cashewkerne"
+      ]
+    },
+    {
+      "id": "peanut",
+      "terms": [
+        "Erdnuss",
+        "Erdnüsse",
+        "Peanut",
+        "Peanuts"
+      ]
+    },
+    {
+      "id": "pistachio",
+      "terms": [
+        "Pistazie",
+        "Pistazien",
+        "Pistachio",
+        "Pistachios"
+      ]
+    },
+    {
+      "id": "sesame",
+      "terms": [
+        "Sesam",
+        "Sesame"
+      ]
+    },
+    {
+      "id": "linseed",
+      "terms": [
+        "Leinsamen",
+        "Flaxseed",
+        "Linseed"
+      ]
+    },
+    {
+      "id": "sunflower",
+      "terms": [
+        "Sonnenblumenkerne",
+        "Sunflower Seeds"
+      ]
+    },
+    {
+      "id": "pumpkinseed",
+      "terms": [
+        "Kürbiskerne",
+        "Pumpkin Seeds"
+      ]
+    },
+    {
+      "id": "oats",
+      "terms": [
+        "Haferflocken",
+        "Oats",
+        "Rolled Oats"
+      ]
+    },
+    {
+      "id": "rice",
+      "terms": [
+        "Reis",
+        "Rice"
+      ]
+    },
+    {
+      "id": "flour",
+      "terms": [
+        "Mehl",
+        "Flour"
+      ]
+    },
+    {
+      "id": "wheat",
+      "terms": [
+        "Weizen",
+        "Wheat"
+      ]
+    },
+    {
+      "id": "spelt",
+      "terms": [
+        "Dinkel",
+        "Spelt"
+      ]
+    },
+    {
+      "id": "rye",
+      "terms": [
+        "Roggen",
+        "Rye"
+      ]
+    },
+    {
+      "id": "barley",
+      "terms": [
+        "Gerste",
+        "Barley"
+      ]
+    },
+    {
+      "id": "millet",
+      "terms": [
+        "Hirse",
+        "Millet"
+      ]
+    },
+    {
+      "id": "buckwheat",
+      "terms": [
+        "Buchweizen",
+        "Buckwheat"
+      ]
+    },
+    {
+      "id": "semolina",
+      "terms": [
+        "Grieß",
+        "Semolina"
+      ]
+    },
+    {
+      "id": "pasta",
+      "terms": [
+        "Nudel",
+        "Nudeln",
+        "Pasta",
+        "Noodle",
+        "Noodles"
+      ]
+    },
+    {
+      "id": "spaghetti",
+      "terms": [
+        "Spaghetti"
+      ]
+    },
+    {
+      "id": "penne",
+      "terms": [
+        "Penne"
+      ]
+    },
+    {
+      "id": "fusilli",
+      "terms": [
+        "Fusilli",
+        "Spiralnudeln"
+      ]
+    },
+    {
+      "id": "tagliatelle",
+      "terms": [
+        "Tagliatelle",
+        "Bandnudeln"
+      ]
+    },
+    {
+      "id": "farfalle",
+      "terms": [
+        "Farfalle",
+        "Schmetterlingsnudeln"
+      ]
+    },
+    {
+      "id": "lasagne",
+      "terms": [
+        "Lasagne",
+        "Lasagna",
+        "Lasagneplatten"
+      ]
+    },
+    {
+      "id": "egg",
+      "terms": [
+        "Ei",
+        "Eier",
+        "Egg",
+        "Eggs",
+        "Hühnerei",
+        "Hühnereier"
+      ]
+    },
+    {
+      "id": "milk",
+      "terms": [
+        "Milch",
+        "Milk"
+      ]
+    },
+    {
+      "id": "cream",
+      "terms": [
+        "Sahne",
+        "Rahm",
+        "Obers",
+        "Cream"
+      ]
+    },
+    {
+      "id": "sourcream",
+      "terms": [
+        "Saure Sahne",
+        "Sauerrahm",
+        "Sour Cream"
+      ]
+    },
+    {
+      "id": "quark",
+      "terms": [
+        "Quark",
+        "Topfen"
+      ]
+    },
+    {
+      "id": "yogurt",
+      "terms": [
+        "Joghurt",
+        "Jogurt",
+        "Yoghurt",
+        "Yogurt"
+      ]
+    },
+    {
+      "id": "cheese",
+      "terms": [
+        "Käse",
+        "Cheese"
+      ]
+    },
+    {
+      "id": "creamcheese",
+      "terms": [
+        "Frischkäse",
+        "Cream Cheese"
+      ]
+    },
+    {
+      "id": "curdcheese",
+      "terms": [
+        "Hüttenkäse",
+        "Körniger Frischkäse",
+        "Cottage Cheese"
+      ]
+    },
+    {
+      "id": "butter",
+      "terms": [
+        "Butter"
+      ]
+    },
+    {
+      "id": "yeast",
+      "terms": [
+        "Hefe",
+        "Germ",
+        "Yeast"
+      ]
+    },
+    {
+      "id": "sugar",
+      "terms": [
+        "Zucker",
+        "Sugar"
+      ]
+    },
+    {
+      "id": "icingsugar",
+      "terms": [
+        "Puderzucker",
+        "Staubzucker",
+        "Icing Sugar",
+        "Powdered Sugar"
+      ]
+    },
+    {
+      "id": "honey",
+      "terms": [
+        "Honig",
+        "Honey"
+      ]
+    },
+    {
+      "id": "maple",
+      "terms": [
+        "Ahornsirup",
+        "Maple Syrup"
+      ]
+    },
+    {
+      "id": "chocolate",
+      "terms": [
+        "Schokolade",
+        "Schoko",
+        "Chocolate"
+      ]
+    },
+    {
+      "id": "cocoa",
+      "terms": [
+        "Kakao",
+        "Cocoa"
+      ]
+    },
+    {
+      "id": "cinnamon",
+      "terms": [
+        "Zimt",
+        "Cinnamon"
+      ]
+    },
+    {
+      "id": "vanilla",
+      "terms": [
+        "Vanille",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "ginger",
+      "terms": [
+        "Ingwer",
+        "Ginger"
+      ]
+    },
+    {
+      "id": "turmeric",
+      "terms": [
+        "Kurkuma",
+        "Turmeric"
+      ]
+    },
+    {
+      "id": "nutmeg",
+      "terms": [
+        "Muskatnuss",
+        "Muskat",
+        "Nutmeg"
+      ]
+    },
+    {
+      "id": "cumin",
+      "terms": [
+        "Kreuzkümmel",
+        "Cumin"
+      ]
+    },
+    {
+      "id": "caraway",
+      "terms": [
+        "Kümmel",
+        "Caraway"
+      ]
+    },
+    {
+      "id": "coriander",
+      "terms": [
+        "Koriander",
+        "Coriander",
+        "Cilantro"
+      ]
+    },
+    {
+      "id": "parsley",
+      "terms": [
+        "Petersilie",
+        "Peterli",
+        "Parsley"
+      ]
+    },
+    {
+      "id": "basil",
+      "terms": [
+        "Basilikum",
+        "Basil"
+      ]
+    },
+    {
+      "id": "thyme",
+      "terms": [
+        "Thymian",
+        "Thyme"
+      ]
+    },
+    {
+      "id": "rosemary",
+      "terms": [
+        "Rosmarin",
+        "Rosemary"
+      ]
+    },
+    {
+      "id": "mint",
+      "terms": [
+        "Minze",
+        "Mint"
+      ]
+    },
+    {
+      "id": "chives",
+      "terms": [
+        "Schnittlauch",
+        "Chives"
+      ]
+    },
+    {
+      "id": "bay",
+      "terms": [
+        "Lorbeer",
+        "Bay Leaf",
+        "Bay Leaves"
+      ]
+    },
+    {
+      "id": "salt",
+      "terms": [
+        "Salz",
+        "Salt"
+      ]
+    },
+    {
+      "id": "blackpepper",
+      "terms": [
+        "Pfeffer",
+        "Black Pepper"
+      ]
+    },
+    {
+      "id": "chili",
+      "terms": [
+        "Chili",
+        "Chilli",
+        "Chilischote",
+        "Chilischoten"
+      ]
+    },
+    {
+      "id": "oil",
+      "terms": [
+        "Öl",
+        "Oil"
+      ]
+    },
+    {
+      "id": "oliveoil",
+      "terms": [
+        "Olivenöl",
+        "Olive Oil"
+      ]
+    },
+    {
+      "id": "vinegar",
+      "terms": [
+        "Essig",
+        "Vinegar"
+      ]
+    },
+    {
+      "id": "stock",
+      "terms": [
+        "Brühe",
+        "Bouillon",
+        "Broth",
+        "Stock"
+      ]
+    },
+    {
+      "id": "soysauce",
+      "terms": [
+        "Sojasauce",
+        "Sojasoße",
+        "Soy Sauce"
+      ]
+    },
+    {
+      "id": "mustard",
+      "terms": [
+        "Senf",
+        "Mustard"
+      ]
+    },
+    {
+      "id": "bakingpowder",
+      "terms": [
+        "Backpulver",
+        "Baking Powder"
+      ]
+    },
+    {
+      "id": "bakingsoda",
+      "terms": [
+        "Natron",
+        "Baking Soda"
+      ]
+    },
+    {
+      "id": "starch",
+      "terms": [
+        "Speisestärke",
+        "Stärke",
+        "Starch"
+      ]
+    },
+    {
+      "id": "pancake",
+      "terms": [
+        "Pfannkuchen",
+        "Eierkuchen",
+        "Palatschinken"
+      ]
+    },
+    {
+      "id": "americanpancake",
+      "terms": [
+        "Pancake",
+        "Pancakes"
+      ]
+    },
+    {
+      "id": "porridge",
+      "terms": [
+        "Porridge",
+        "Haferbrei",
+        "Oatmeal"
+      ]
+    },
+    {
+      "id": "meatball",
+      "terms": [
+        "Hackbällchen",
+        "Fleischbällchen",
+        "Meatball",
+        "Meatballs"
+      ]
+    },
+    {
+      "id": "patty",
+      "terms": [
+        "Frikadelle",
+        "Frikadellen",
+        "Bulette",
+        "Buletten",
+        "Fleischpflanzerl"
+      ]
+    },
+    {
+      "id": "tzatziki",
+      "terms": [
+        "Zaziki",
+        "Tzatziki",
+        "Tsatsiki"
+      ]
+    },
+    {
+      "id": "jam",
+      "terms": [
+        "Konfitüre",
+        "Marmelade",
+        "Jam"
+      ]
+    },
+    {
+      "id": "cookie",
+      "terms": [
+        "Cookie",
+        "Cookies",
+        "Keks",
+        "Kekse"
+      ]
+    },
+    {
+      "id": "roll",
+      "terms": [
+        "Brötchen",
+        "Semmel",
+        "Semmeln",
+        "Schrippe",
+        "Schrippen",
+        "Weckchen"
+      ]
+    },
+    {
+      "id": "soup",
+      "terms": [
+        "Suppe",
+        "Suppen",
+        "Soup",
+        "Soups"
+      ]
+    },
+    {
+      "id": "salad",
+      "terms": [
+        "Salat",
+        "Salate",
+        "Salad",
+        "Salads"
+      ]
+    },
+    {
+      "id": "cake",
+      "terms": [
+        "Kuchen",
+        "Cake",
+        "Cakes"
+      ]
+    },
+    {
+      "id": "bread",
+      "terms": [
+        "Brot",
+        "Brote",
+        "Bread"
+      ]
+    },
+    {
+      "id": "sauce",
+      "terms": [
+        "Sauce",
+        "Saucen",
+        "Soße",
+        "Soßen",
+        "Sosse",
+        "Sossen"
+      ]
+    },
+    {
+      "id": "mashedpotato",
+      "terms": [
+        "Kartoffelpüree",
+        "Kartoffelbrei",
+        "Erdäpfelpüree",
+        "Mashed Potatoes"
+      ]
+    },
+    {
+      "id": "coleslaw",
+      "terms": [
+        "Coleslaw",
+        "Krautsalat"
+      ]
+    },
+    {
+      "id": "hummus",
+      "terms": [
+        "Hummus",
+        "Humus"
+      ]
+    },
+    {
+      "id": "dip",
+      "terms": [
+        "Dip",
+        "Dips"
+      ]
+    },
+    {
+      "id": "stew",
+      "terms": [
+        "Eintopf",
+        "Eintöpfe",
+        "Stew"
+      ]
+    },
+    {
+      "id": "casserole",
+      "terms": [
+        "Auflauf",
+        "Aufläufe",
+        "Casserole"
+      ]
+    },
+    {
+      "id": "dessert",
+      "terms": [
+        "Dessert",
+        "Desserts",
+        "Nachspeise",
+        "Nachspeisen",
+        "Nachtisch"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "terms": [
+        "Geflügel",
+        "Poultry"
+      ],
+      "members": [
+        "chicken",
+        "turkey",
+        "duck",
+        "goose"
+      ]
+    },
+    {
+      "terms": [
+        "Fleisch",
+        "Meat"
+      ],
+      "members": [
+        "chicken",
+        "turkey",
+        "duck",
+        "goose",
+        "beef",
+        "pork",
+        "lamb",
+        "mince",
+        "ham",
+        "bacon",
+        "sausage"
+      ]
+    },
+    {
+      "terms": [
+        "Fisch",
+        "Fish"
+      ],
+      "members": [
+        "salmon",
+        "tuna",
+        "cod",
+        "trout"
+      ]
+    },
+    {
+      "terms": [
+        "Pilz",
+        "Pilze",
+        "Mushroom",
+        "Mushrooms"
+      ],
+      "members": [
+        "mushroom",
+        "porcini",
+        "chanterelle",
+        "shiitake"
+      ]
+    },
+    {
+      "terms": [
+        "Nudel",
+        "Nudeln",
+        "Pasta",
+        "Noodle",
+        "Noodles"
+      ],
+      "members": [
+        "pasta",
+        "spaghetti",
+        "penne",
+        "fusilli",
+        "tagliatelle",
+        "farfalle",
+        "lasagne"
+      ]
+    },
+    {
+      "terms": [
+        "Beere",
+        "Beeren",
+        "Berry",
+        "Berries"
+      ],
+      "members": [
+        "strawberry",
+        "raspberry",
+        "blueberry",
+        "blackberry",
+        "currant"
+      ]
+    },
+    {
+      "terms": [
+        "Nuss",
+        "Nüsse",
+        "Nut",
+        "Nuts"
+      ],
+      "members": [
+        "walnut",
+        "hazelnut",
+        "almond",
+        "cashew",
+        "peanut",
+        "pistachio"
+      ]
+    },
+    {
+      "terms": [
+        "Hülsenfrucht",
+        "Hülsenfrüchte",
+        "Legumes"
+      ],
+      "members": [
+        "lentil",
+        "chickpea",
+        "bean",
+        "pea"
+      ]
+    },
+    {
+      "terms": [
+        "Gemüse",
+        "Vegetable",
+        "Vegetables"
+      ],
+      "members": [
+        "carrot",
+        "potato",
+        "sweetpotato",
+        "tomato",
+        "aubergine",
+        "courgette",
+        "pepper",
+        "broccoli",
+        "cauliflower",
+        "spinach",
+        "leek",
+        "springonion",
+        "onion",
+        "garlic",
+        "celery",
+        "beetroot",
+        "cucumber",
+        "pumpkin",
+        "cabbage",
+        "redcabbage",
+        "savoy",
+        "brussels",
+        "kale",
+        "asparagus",
+        "fennel",
+        "radish",
+        "rocket",
+        "lettuce",
+        "corn",
+        "pea"
+      ]
+    },
+    {
+      "terms": [
+        "Obst",
+        "Frucht",
+        "Früchte",
+        "Fruit",
+        "Fruits"
+      ],
+      "members": [
+        "apple",
+        "pear",
+        "banana",
+        "strawberry",
+        "raspberry",
+        "blueberry",
+        "blackberry",
+        "currant",
+        "apricot",
+        "peach",
+        "plum",
+        "damson",
+        "cherry",
+        "lemon",
+        "lime",
+        "orange",
+        "grape",
+        "date",
+        "raisin",
+        "fig",
+        "pineapple",
+        "mango"
+      ]
+    },
+    {
+      "terms": [
+        "Kräuter",
+        "Herb",
+        "Herbs"
+      ],
+      "members": [
+        "parsley",
+        "basil",
+        "thyme",
+        "rosemary",
+        "mint",
+        "chives",
+        "coriander",
+        "bay"
+      ]
+    },
+    {
+      "terms": [
+        "Pfannkuchen"
+      ],
+      "members": [
+        "pancake",
+        "americanpancake"
+      ]
+    }
+  ],
+  "queryFillers": [
+    "mit",
+    "und",
+    "der",
+    "die",
+    "das",
+    "ein",
+    "eine",
+    "einen",
+    "einem",
+    "einer",
+    "für",
+    "zum",
+    "zur",
+    "aus"
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "version": 2,
+  "id": "xiaomi-c3-product-2026-10-26-r2",
+  "deviceModel": "xiaomi-c3",
+  "secondsMin": 1,
+  "secondsMax": 7200,
+  "temperatureMin": 35,
+  "temperatureMax": 180,
+  "speedRawMin": 5,
+  "speedRawMax": 100,
+  "speedRawStep": 5,
+  "sourceSha256": "a488b613012d48d0e88f9d36acebc1ee510b4e06f4ccb855076b877d6c62b4d0",
+  "armSha256": "23bffe502d50a97e837fe7b9e027ab4e9bbea0f83807cf54c2b330a270565973",
+  "x64Sha256": "389be37ee06d348a130b8976cb3d0ff62a9ec741bd0bb87ca6134850a87fca56",
+  "evidence": "Docs/research/2026-10-20-scale-realtime.md",
+  "note": "Product candidate: software and OEM-byte review pending physical validation. Modes are not a Cartesian product. Normal integer temperatures preserve existing recipe values; new dial input uses five degrees.",
+  "temperatureUiStep": 5,
+  "headerSha256": "b99398a6696fe10bfb8fc492dbaf05bbb1706f431d8441c5ea7dc0ba1b528a08",
+  "sourcePath": "machine/src/main/cpp/bridge.c",
+  "modes": [
+    {
+      "id": "normal",
+      "native": 1,
+      "secondsMin": 1,
+      "secondsMax": 7200,
+      "temperatureMin": 35,
+      "temperatureMax": 100,
+      "temperatureStep": 1,
+      "temperatureOff": true,
+      "speedRawMin": 5,
+      "speedRawMax": 30,
+      "speedRawStep": 5,
+      "directions": [
+        "clockwise",
+        "counterclockwise"
+      ],
+      "oemModeId": 1
+    },
+    {
+      "id": "motor",
+      "native": 2,
+      "secondsMin": 1,
+      "secondsMax": 300,
+      "temperatureValues": [
+        0
+      ],
+      "speedRawValues": [
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80,
+        90,
+        100
+      ],
+      "directions": [
+        "clockwise"
+      ],
+      "initialTemperatureBelow": 60,
+      "runningTemperatureBelow": 60,
+      "activeHeaterPower": 0,
+      "oemModeId": 6
+    },
+    {
+      "id": "fry",
+      "native": 3,
+      "secondsMin": 1,
+      "secondsMax": 1800,
+      "temperatureMin": 100,
+      "temperatureMax": 180,
+      "temperatureStep": 5,
+      "speedRawValues": [
+        -10
+      ],
+      "directions": [
+        "counterclockwise"
+      ],
+      "oemModeId": 5
+    }
+  ],
+  "heatOnly": {
+    "baseMode": "normal",
+    "speedRaw": 0,
+    "temperatureMin": 35,
+    "temperatureMax": 100,
+    "secondsMax": 7200,
+    "scope": "local-controls-only",
+    "physicalValidation": "pending"
+  },
+  "lidless": {
+    "command": "START_OPEN",
+    "baseMode": "normal",
+    "temperatureMax": 100,
+    "speedRawMax": 30,
+    "secondsMax": 7200,
+    "scope": "local-function-only",
+    "requiresKnownCoverSignal": true,
+    "preserveMcuErrors": true,
+    "requiresMcuVersion": 12,
+    "oemProfileFlag": 8,
+    "nativeReview": "output/qa/lidless-profile-r4-root-review/native-review.md",
+    "physicalValidation": "pending"
+  },
+  "scaleTelemetry": {
+    "idleIntervalMs": 50,
+    "cookingIntervalMs": 100,
+    "stableMinMs": 400,
+    "stableWindowMs": 600,
+    "display": "latest-sample",
+    "physicalValidation": "passive-45s-703-status-replies-no-freshness-gap; app UI pending integration"
+  },
+  "localManual": {
+    "native": 4,
+    "command": "START_MANUAL",
+    "oemModeId": 1,
+    "secondsMax": 7200,
+    "temperatureMax": 150,
+    "reverseRawMax": 100,
+    "forwardRawMax": 100,
+    "highSpeedAbove": 60,
+    "scope": "local-manual-controls-only",
+    "physicalValidation": "pending",
+    "evidence": "Docs/research/2026-10-22-manual-speed-and-preclean.md",
+    "speedRawStep": 5,
+    "highSpeedTemperatureMax": 80,
+    "highSpeedActualMax": 80
+  },
+  "localTurbo": {
+    "native": 5,
+    "command": "START_TURBO",
+    "oemModeId": 7,
+    "secondsValues": [
+      1,
+      2
+    ],
+    "speedRawValues": [
+      100,
+      110,
+      120
+    ],
+    "temperatureValues": [
+      0
+    ],
+    "requiredVersions": [
+      12,
+      4,
+      5
+    ],
+    "preparationMaxMs": 9000,
+    "pulseMaxMs": 2000,
+    "stopOpcode": 138,
+    "scope": "local-function-only",
+    "physicalValidation": "pending"
+  },
+  "fryingMotorIntervals": {
+    "command": "FRY_MOTOR",
+    "speedRawValues": [
+      0,
+      -10
+    ],
+    "requiredVersions": [
+      12,
+      4,
+      5
+    ],
+    "scope": "owned-running-fry-only",
+    "preserves": [
+      "temperature",
+      "deadline",
+      "sessionDeadline"
+    ],
+    "physicalValidation": "pending"
+  }
+}

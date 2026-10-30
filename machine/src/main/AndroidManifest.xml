@@ -1,0 +1,28 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <permission android:name="com.kitchenos.connect.INTERNAL" android:protectionLevel="signature"/>
+  <uses-permission android:name="com.kitchenos.connect.INTERNAL"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+  <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+  <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+  <application android:label="KitchenOS" android:icon="@drawable/ic_kitchenos" android:theme="@android:style/Theme.Material.NoActionBar" android:allowBackup="false" android:usesCleartextTraffic="false">
+    <activity android:name=".ui.ApplianceActivity" android:exported="true" android:screenOrientation="portrait">
+      <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+    </activity>
+    <activity android:name=".MainActivity" android:exported="false" android:screenOrientation="portrait"/>
+    <activity android:name=".ui.ScaleActivity" android:exported="false" android:screenOrientation="portrait"/>
+    <activity android:name=".control.ControlActivity" android:exported="false" android:screenOrientation="portrait"/>
+    <activity android:name=".kitchen.KitchenChatActivity" android:exported="false" android:screenOrientation="portrait"/>
+    <activity android:name=".kitchen.AccountCallbackActivity" android:exported="true" android:screenOrientation="portrait">
+      <intent-filter><action android:name="android.intent.action.VIEW"/><category android:name="android.intent.category.DEFAULT"/><category android:name="android.intent.category.BROWSABLE"/><data android:scheme="kitchenos" android:host="account" android:path="/callback"/></intent-filter>
+    </activity>
+    <service android:name=".RecipeReceiverService" android:exported="false"/>
+    <service android:name=".WifiSetupService" android:exported="false"/>
+    <activity android:name=".ui.SetupActivity" android:exported="false" android:screenOrientation="portrait"/>
+    <activity android:name=".ui.SetupResetActivity" android:exported="false" android:screenOrientation="portrait"/>
+  </application>
+</manifest>

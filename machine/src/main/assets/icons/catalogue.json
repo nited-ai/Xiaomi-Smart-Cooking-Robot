@@ -1,0 +1,30 @@
+{
+  "license": "MIT",
+  "source": "Tabler Icons official repository",
+  "icons": [
+    {
+      "icon": "ladle",
+      "source": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/ladle.svg",
+      "sha256": "916e890c363a63f3f1a775b9faa71ec2859c518e69eb1a7e9832ace29470f817",
+      "adaptation": "Ladle rotated45degrees at rendering."
+    },
+    {
+      "icon": "whisk",
+      "source": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/whisk.svg",
+      "sha256": "0fc16e503f27e1494490b7efff854dc599fecba9afac7586dfe42c9b62a5292e",
+      "adaptation": "Whisk head reduced to82percent around lower tip to give the handle more length."
+    },
+    {
+      "icon": "scale",
+      "source": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/scale.svg",
+      "sha256": "3db02384be027e58baa34455172f29b5b7ccc9aa27b1d260890873adc3e9270e",
+      "adaptation": "Unchanged geometry."
+    },
+    {
+      "icon": "spoon",
+      "source": "https://github.com/tabler/tabler-icons/blob/main/icons/outline/tools-kitchen-3.svg",
+      "sha256": "a381449811ce5991590d5be7843c8a482c6ec48bc1a502aab0f57017477d9821",
+      "adaptation": "Unchanged geometry."
+    }
+  ]
+}

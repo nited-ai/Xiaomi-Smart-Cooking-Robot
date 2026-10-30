@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "id": "xiaomi-c3-normal-2026-10-18-r1",
+  "deviceModel": "xiaomi-c3",
+  "secondsMin": 1,
+  "secondsMax": 600,
+  "temperatureMin": 35,
+  "temperatureMax": 95,
+  "speedRawMin": 5,
+  "speedRawMax": 30,
+  "speedRawStep": 5,
+  "sourceSha256": "88246b5813bc43a7bb463f482f9a33ead5cde27e2eade4581360234bd501db7b",
+  "armSha256": "9fbea17fb1fa300ea2562cac39dd762a1e0abf2756fbcc08132bf34e1184671b",
+  "x64Sha256": "4951c6ed91d831701d7b7dc607991ee17f99f412b021795efee42dad4f1b08e8",
+  "evidence": "CONTROL-INTEGRATION-HANDOFF-2026-10-18.md",
+  "note": "Software envelope of the pinned Connect bridge, not a certificate for every food, accessory or parameter combination. Experimental KitchenOSTest profiles are separate."
+}

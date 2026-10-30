@@ -1,0 +1,3 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <instrumentation android:name=".ShareSmoke" android:targetPackage="com.kitchenos.share" android:label="Share/import/TLS checks"/>
+</manifest>

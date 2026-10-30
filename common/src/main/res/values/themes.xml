@@ -1,0 +1,14 @@
+<resources>
+  <style name="KitchenOSDarkTheme" parent="android:style/Theme.Material.NoActionBar">
+    <item name="android:colorAccent">#ee6542</item><item name="android:windowBackground">#171918</item><item name="android:textColorPrimary">#f2f3ee</item><item name="android:textColorSecondary">#a7aea8</item><item name="android:fontFamily">sans</item><item name="android:alertDialogTheme">@style/KitchenOSDarkDialog</item>
+  </style>
+  <style name="KitchenOSLightTheme" parent="android:style/Theme.Material.Light.NoActionBar">
+    <item name="android:colorAccent">#ee6542</item><item name="android:windowBackground">#fbfbfa</item><item name="android:textColorPrimary">#171716</item><item name="android:textColorSecondary">#65655f</item><item name="android:fontFamily">sans</item><item name="android:alertDialogTheme">@style/KitchenOSLightDialog</item>
+  </style>
+  <style name="KitchenOSDarkDialog" parent="android:style/Theme.Material.Dialog.Alert">
+    <item name="android:windowBackground">@drawable/dialog_dark</item><item name="android:colorAccent">#ee6542</item><item name="android:textColorPrimary">#f2f3ee</item><item name="android:textColorSecondary">#a7aea8</item>
+  </style>
+  <style name="KitchenOSLightDialog" parent="android:style/Theme.Material.Light.Dialog.Alert">
+    <item name="android:windowBackground">@drawable/dialog_light</item><item name="android:colorAccent">#ee6542</item><item name="android:textColorPrimary">#171716</item><item name="android:textColorSecondary">#65655f</item>
+  </style>
+</resources>

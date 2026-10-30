@@ -1,0 +1,30 @@
+# Local configuration and credentials
+local.properties
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+*.pem
+*.key
+*service-account*.json
+*credentials*.json
+google-services.json
+
+# Reproducible dependencies and build products
+.gradle/
+**/build/
+node_modules/
+backend/public/auth.js
+*.apk
+*.aab
+*.ab
+*.db
+*.img
+*.zip
+*.log
+__pycache__/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,59 @@
+{
+  "icons": [
+    {
+      "id": "water",
+      "sha256": "5097e81de9df59a62f9e8d7c73d2e4fd3f0e651cd585033898e56153a29ae465",
+      "design": "KitchenOS reduced original line pictogram",
+      "reference": "User feedback 2026-10-20: handle slopes down/right; open rim; centered rice; isolated steamer; pear-shaped whisk; reduced actual blade assembly with shaft"
+    },
+    {
+      "id": "stir",
+      "sha256": "55d0d366447a65227c1609e32f139a6a38749360b61c69cc7d6242b59fb8b672",
+      "design": "KitchenOS reduced original line pictogram",
+      "reference": "User feedback 2026-10-20: handle slopes down/right; open rim; centered rice; isolated steamer; pear-shaped whisk; reduced actual blade assembly with shaft"
+    },
+    {
+      "id": "puree",
+      "sha256": "63b758c032b2354c86e806b763855849761e177603c3a615937683a487e055db",
+      "design": "KitchenOS reduced original line pictogram",
+      "reference": "User feedback 2026-10-20: handle slopes down/right; open rim; centered rice; isolated steamer; pear-shaped whisk; reduced actual blade assembly with shaft"
+    },
+    {
+      "id": "blade",
+      "sha256": "5104dc31b8aa6d6c3b98a6ee2d5269dcb20a2e36a34f4f707d7b00eba35d23d2",
+      "design": "KitchenOS reduced original line pictogram",
+      "reference": "User feedback 2026-10-20: handle slopes down/right; open rim; centered rice; isolated steamer; pear-shaped whisk; reduced actual blade assembly with shaft"
+    },
+    {
+      "id": "steam",
+      "sha256": "aed2da122093b8b48cc46f8e6349077988eca7d79153c3d631393dd9e68e3644",
+      "design": "KitchenOS reduced original line pictogram",
+      "reference": "User feedback 2026-10-20: handle slopes down/right; open rim; centered rice; isolated steamer; pear-shaped whisk; reduced actual blade assembly with shaft"
+    },
+    {
+      "id": "whip",
+      "sha256": "c232e50804e67971295b701661f9493d9a0658f8acbce67698c34e611ca2532e",
+      "design": "KitchenOS reduced original line pictogram",
+      "reference": "User feedback 2026-10-20: handle slopes down/right; open rim; centered rice; isolated steamer; pear-shaped whisk; reduced actual blade assembly with shaft"
+    },
+    {
+      "id": "mix",
+      "sha256": "6d83997aa30ece60baa5daf640639ac8475e148ec47fb40f67b8ce97c13af071",
+      "design": "KitchenOS reduced original line pictogram",
+      "reference": "User feedback 2026-10-20: handle slopes down/right; open rim; centered rice; isolated steamer; pear-shaped whisk; reduced actual blade assembly with shaft"
+    },
+    {
+      "id": "lidless",
+      "sha256": "b87ecab3c601874d30a61876e089afa03cf731d9b469da7332aa82ae8f70be41",
+      "design": "KitchenOS reduced original line pictogram",
+      "reference": "User feedback 2026-10-20: handle slopes down/right; open rim; centered rice; isolated steamer; pear-shaped whisk; reduced actual blade assembly with shaft"
+    },
+    {
+      "id": "rice",
+      "sha256": "962b1d3b793b589db8a0b39c03045049939885af6116b22e1c45209308bcc3cf",
+      "design": "KitchenOS reduced original line pictogram",
+      "reference": "User feedback 2026-10-20: handle slopes down/right; open rim; centered rice; isolated steamer; pear-shaped whisk; reduced actual blade assembly with shaft"
+    }
+  ],
+  "nativeStrokeWidth": 4
+}

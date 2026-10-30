@@ -1,0 +1,45 @@
+# Snapshot and validation status
+
+Publication date: 2026-10-30.
+
+This is a fresh-history export of the development worktree based on private
+handoff commit `f3b788d0`, including later uncommitted control changes. It does not
+claim to reproduce the last physically installed APK. The project board recorded
+Build 190 as installed on 2026-10-23; later Build 191 control changes were checked
+offline and their physical heating / motor behavior remained unverified.
+
+## Publication verification
+
+- Backend authentication-client bundle: built successfully with esbuild.
+- Included backend suite: **143 tests passed, 0 failed** on Node.js 24.21.0.
+  The repository declares Node.js 22; CI is configured to check that version.
+- Publication checker: controller source, generated header, both native artifacts
+  and shared contracts match their recorded hashes. The configured secret-pattern
+  and excluded-file checks passed. These checks are not a full security audit.
+- Gitleaks 8.30.1 directory scan: no findings, with redacted reporting.
+- Appliance/common Java sources compile against the official Android 34 API jar
+  using local resource-ID and BuildConfig stand-ins. This checks Java types and
+  syntax, including the public-edition artwork fallback; it does not build an APK
+  or validate Android resources, packaging, execution or visual alignment.
+- Android APK compilation, emulator acceptance, screenshot review and physical
+  appliance validation were not performed for this public snapshot. The Android
+  SDK / NDK needed for a rebuild were unavailable in this environment.
+
+## Open work
+
+- Rebuild the Android APKs in a fully provisioned Windows SDK / NDK environment.
+- Run final-APK emulator and supervised hardware acceptance before any appliance
+  release. Confirm the stop path, telemetry freshness, pot / cover behavior,
+  temperature behavior, rotary input and guided-program transitions.
+- Inspect the public source edition at the appliance display size. Omitted photos
+  and 3D assets mean private-build visual parity is not established. Existing
+  line icons were copied unchanged. The new schematic artwork fallback still
+  needs rendered screenshot review, including optical centering wherever used
+  inside a circle; no visual acceptance claim is made.
+- Port the Windows NDK host path and improve first-time developer setup.
+- Replace mixed-origin assets with clearly licensed originals.
+- Independently deploy and validate service integrations before enabling account,
+  AI or cloud write features. Mock tests do not prove provider login or deployment.
+
+No firmware was flashed, no device was installed or controlled, and no production
+service was deployed while preparing this source release.

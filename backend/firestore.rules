@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Server Admin SDK only. Merge with the existing project's rules when integrating.
+    match /kitchenosUsersV1/{path=**} { allow read, write: if false; }
+    match /kitchenosAuthCodesV1/{path=**} { allow read, write: if false; }
+    match /kitchenosDeviceAuthV1/{path=**} { allow read, write: if false; }
+    match /kitchenosCatalogV1/{path=**} { allow read, write: if false; }
+  }
+}

@@ -1,0 +1,613 @@
+{
+  "id": "21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4",
+  "slug": "brownies",
+  "record": {
+    "version": 1,
+    "title": "Schokoladen-Brownies",
+    "portion": 1,
+    "ingredients": [
+      {
+        "id": "ingredient-0",
+        "name": "Zartbitterschokolade",
+        "amount": 37.5,
+        "unit": "g",
+        "kalorien": null,
+        "protein": null,
+        "fett": null,
+        "kohlenhydrate": null,
+        "ballaststoffe": null
+      },
+      {
+        "id": "ingredient-1",
+        "name": "Butter",
+        "amount": 25,
+        "unit": "g",
+        "kalorien": null,
+        "protein": null,
+        "fett": null,
+        "kohlenhydrate": null,
+        "ballaststoffe": null
+      },
+      {
+        "id": "ingredient-2",
+        "name": "Zucker",
+        "amount": 30,
+        "unit": "g",
+        "kalorien": null,
+        "protein": null,
+        "fett": null,
+        "kohlenhydrate": null,
+        "ballaststoffe": null
+      },
+      {
+        "id": "ingredient-3",
+        "name": "Eier",
+        "amount": 0.5,
+        "unit": "Stück",
+        "kalorien": null,
+        "protein": null,
+        "fett": null,
+        "kohlenhydrate": null,
+        "ballaststoffe": null
+      },
+      {
+        "id": "ingredient-4",
+        "name": "Weizenmehl Type 405",
+        "amount": 17.5,
+        "unit": "g",
+        "kalorien": null,
+        "protein": null,
+        "fett": null,
+        "kohlenhydrate": null,
+        "ballaststoffe": null
+      },
+      {
+        "id": "ingredient-5",
+        "name": "Backkakao",
+        "amount": 3.75,
+        "unit": "g",
+        "kalorien": null,
+        "protein": null,
+        "fett": null,
+        "kohlenhydrate": null,
+        "ballaststoffe": null
+      },
+      {
+        "id": "ingredient-6",
+        "name": "Salz",
+        "amount": 0.25,
+        "unit": "g",
+        "kalorien": null,
+        "protein": null,
+        "fett": null,
+        "kohlenhydrate": null,
+        "ballaststoffe": null
+      }
+    ],
+    "status": "recipe",
+    "guide": {
+      "title": "Schokoladen-Brownies",
+      "prepMinutes": 20,
+      "cookMinutes": 28,
+      "restMinutes": 35,
+      "difficulty": "einfach",
+      "equipment": [
+        "mixing-blade",
+        "spatula",
+        "scale",
+        "oven"
+      ],
+      "steps": [
+        {
+          "title": "Backform vorbereiten",
+          "instruction": "Eine quadratische, etwa 20 × 20 cm große Backform mit Rand (kein flaches Backblech) mit Backpapier auslegen. Backofen von Hand auf 175 °C Ober-/Unterhitze vorheizen.",
+          "ingredients": [],
+          "minutes": null,
+          "temperatureC": null,
+          "heat": "",
+          "cue": ""
+        },
+        {
+          "title": "Schokolade vorbereiten",
+          "instruction": "Schokolade von Hand in kleine Stücke brechen und in den Topf geben.",
+          "ingredients": [
+            {
+              "ingredientId": "ingredient-0",
+              "share": 1
+            }
+          ],
+          "minutes": null,
+          "temperatureC": null,
+          "heat": "",
+          "cue": ""
+        },
+        {
+          "title": "Butter einwiegen",
+          "instruction": "Butter in kleinen Würfeln zur Schokolade in den Topf einwiegen.",
+          "ingredients": [
+            {
+              "ingredientId": "ingredient-1",
+              "share": 1
+            }
+          ],
+          "minutes": null,
+          "temperatureC": null,
+          "heat": "",
+          "cue": ""
+        },
+        {
+          "title": "Schokolade schmelzen",
+          "instruction": "Butter und Schokolade bei geschlossenem Deckel schmelzen.",
+          "ingredients": [],
+          "minutes": 4,
+          "temperatureC": 50,
+          "heat": "",
+          "cue": ""
+        },
+        {
+          "title": "Schmelze prüfen",
+          "instruction": "Stillstand abwarten und mit dem Spatel glatt rühren. Erst fortfahren, wenn keine festen Schokoladenstücke mehr sichtbar sind.",
+          "ingredients": [],
+          "minutes": null,
+          "temperatureC": null,
+          "heat": "",
+          "cue": ""
+        },
+        {
+          "title": "Abkühlen lassen",
+          "instruction": "Schokoladenmasse bei ausgeschalteter Maschine 5 Minuten abkühlen lassen; sie soll höchstens handwarm sein, bevor Eier hinzukommen.",
+          "ingredients": [],
+          "minutes": 5,
+          "temperatureC": null,
+          "heat": "",
+          "cue": ""
+        },
+        {
+          "title": "Zucker einwiegen",
+          "instruction": "Zucker in den Topf einwiegen.",
+          "ingredients": [
+            {
+              "ingredientId": "ingredient-2",
+              "share": 1
+            }
+          ],
+          "minutes": null,
+          "temperatureC": null,
+          "heat": "",
+          "cue": ""
+        },
+        {
+          "title": "Eier zugeben",
+          "instruction": "Eier einzeln in einer Schale aufschlagen und ohne Schalenreste zur handwarmen Schokoladenmasse in den Topf geben.",
+          "ingredients": [
+            {
+              "ingredientId": "ingredient-3",
+              "share": 1
+            }
+          ],
+          "minutes": null,
+          "temperatureC": null,
+          "heat": "",
+          "cue": ""
+        },
+        {
+          "title": "Eier einarbeiten",
+          "instruction": "Die bereits zugegebenen Eier in die handwarme Schokoladenmasse einarbeiten, bis die Masse gleichmäßig ist.",
+          "ingredients": [],
+          "minutes": 0.75,
+          "temperatureC": 0,
+          "heat": "",
+          "cue": ""
+        },
+        {
+          "title": "Trockene Zutaten einwiegen",
+          "instruction": "Mehl, Backkakao und Salz nacheinander direkt zur Masse in den Topf einwiegen.",
+          "ingredients": [
+            {
+              "ingredientId": "ingredient-4",
+              "share": 1
+            },
+            {
+              "ingredientId": "ingredient-5",
+              "share": 1
+            },
+            {
+              "ingredientId": "ingredient-6",
+              "share": 1
+            }
+          ],
+          "minutes": null,
+          "temperatureC": null,
+          "heat": "",
+          "cue": ""
+        },
+        {
+          "title": "Teig kurz verrühren",
+          "instruction": "Nur kurz vermischen; anschließend bei Stillstand verbliebene Mehlspuren mit dem Spatel unterheben.",
+          "ingredients": [],
+          "minutes": 0.3333333333333333,
+          "temperatureC": 0,
+          "heat": "",
+          "cue": ""
+        },
+        {
+          "title": "Brownies backen",
+          "instruction": "Teig in die vorbereitete Form füllen. Im vorgeheizten Backofen bei 175 °C Ober-/Unterhitze etwa 22–28 Minuten backen. Die Oberfläche ist fest, ein Holzstäbchen zeigt feuchte Krümel, aber keinen flüssigen Teig.",
+          "ingredients": [],
+          "minutes": null,
+          "temperatureC": null,
+          "heat": "",
+          "cue": ""
+        },
+        {
+          "title": "Abkühlen lassen",
+          "instruction": "In der Form mindestens 30 Minuten abkühlen lassen, dann in 8 kleine Stücke schneiden: 2 Stücke je Portion.",
+          "ingredients": [],
+          "minutes": 30,
+          "temperatureC": null,
+          "heat": "",
+          "cue": ""
+        }
+      ],
+      "tips": [
+        "Enthält Milch, Eier und Weizen. Ofenzeiten hängen von der Form ab."
+      ]
+    },
+    "reviewStatus": "unreviewed",
+    "origin": "kitchen-curated",
+    "imageSource": "dish-photo-v1",
+    "dishImage": {
+      "id": "c8817b339a758aea918247756f9274e1b9c857a1ffc360721fbe44fa9887a229",
+      "style": "dish-photo-v1",
+      "path": "dish-images/dish-photo-v1/c8817b339a758aea918247756f9274e1b9c857a1ffc360721fbe44fa9887a229.jpg"
+    },
+    "provenance": {
+      "title": "Cookidoo: Brownies",
+      "url": "https://cookidoo.thermomix.com/recipes/recipe/en-US/r168965",
+      "access": "public-ingredients-only",
+      "adaptation": "Eigene kleinere Backmenge ohne Nüsse und eigene Zubereitung; kein Originalimport.",
+      "kind": "authored-adaptation",
+      "cookingTested": false,
+      "batch": "starter-recipes-2026-10-19"
+    },
+    "createdAt": 1,
+    "updatedAt": 1
+  },
+  "variant": {
+    "compatible": true,
+    "reason": "",
+    "program": {
+      "version": 1,
+      "id": "21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4-c3-p4",
+      "title": "Schokoladen-Brownies",
+      "source": {
+        "url": "https://cookidoo.thermomix.com/recipes/recipe/en-US/r168965",
+        "recipeId": "21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4",
+        "revision": "1f0091e05e0806441ccc86f07764a3a7ad016e86afd37efc40d1ea5dd2757e71"
+      },
+      "deviceModel": "xiaomi-c3",
+      "servings": 4,
+      "tools": [
+        "mixing-blade",
+        "spatula",
+        "scale",
+        "oven"
+      ],
+      "cover": {
+        "url": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4/cover",
+        "source": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4",
+        "alt": "Schokoladen-Brownies",
+        "kind": "photo"
+      },
+      "steps": [
+        {
+          "id": "step-1",
+          "kind": "prepare",
+          "title": "Backform vorbereiten",
+          "instruction": "Eine quadratische, etwa 20 × 20 cm große Backform mit Rand (kein flaches Backblech) mit Backpapier auslegen. Backofen von Hand auf 175 °C Ober-/Unterhitze vorheizen.",
+          "ingredients": [],
+          "image": {
+            "url": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4/cover",
+            "source": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4",
+            "alt": "Gericht: Schokoladen-Brownies",
+            "kind": "photo"
+          },
+          "settings": {
+            "durationSeconds": null,
+            "temperatureC": null,
+            "speedLevel": null,
+            "direction": null
+          }
+        },
+        {
+          "id": "step-2",
+          "kind": "prepare",
+          "title": "Schokolade vorbereiten",
+          "instruction": "Schokolade von Hand in kleine Stücke brechen und in den Topf geben.",
+          "ingredients": [
+            {
+              "name": "Zartbitterschokolade",
+              "amount": 150,
+              "unit": "g"
+            }
+          ],
+          "image": {
+            "url": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4/cover",
+            "source": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4",
+            "alt": "Gericht: Schokoladen-Brownies",
+            "kind": "photo"
+          },
+          "settings": {
+            "durationSeconds": null,
+            "temperatureC": null,
+            "speedLevel": null,
+            "direction": null
+          }
+        },
+        {
+          "id": "step-3",
+          "kind": "weigh",
+          "title": "Butter einwiegen",
+          "instruction": "Butter in kleinen Würfeln zur Schokolade in den Topf einwiegen.",
+          "ingredients": [
+            {
+              "name": "Butter",
+              "amount": 100,
+              "unit": "g"
+            }
+          ],
+          "image": {
+            "url": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4/cover",
+            "source": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4",
+            "alt": "Gericht: Schokoladen-Brownies",
+            "kind": "photo"
+          },
+          "settings": {
+            "durationSeconds": null,
+            "temperatureC": null,
+            "speedLevel": null,
+            "direction": null
+          }
+        },
+        {
+          "id": "step-4",
+          "kind": "machine",
+          "title": "Schokolade schmelzen",
+          "instruction": "Butter und Schokolade bei geschlossenem Deckel schmelzen.",
+          "ingredients": [],
+          "image": {
+            "url": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4/cover",
+            "source": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4",
+            "alt": "Gericht: Schokoladen-Brownies",
+            "kind": "photo"
+          },
+          "settings": {
+            "durationSeconds": 240,
+            "temperatureC": 50,
+            "speedLevel": 1,
+            "direction": "clockwise"
+          }
+        },
+        {
+          "id": "step-5",
+          "kind": "prepare",
+          "title": "Schmelze prüfen",
+          "instruction": "Stillstand abwarten und mit dem Spatel glatt rühren. Erst fortfahren, wenn keine festen Schokoladenstücke mehr sichtbar sind.",
+          "ingredients": [],
+          "image": {
+            "url": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4/cover",
+            "source": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4",
+            "alt": "Gericht: Schokoladen-Brownies",
+            "kind": "photo"
+          },
+          "settings": {
+            "durationSeconds": null,
+            "temperatureC": null,
+            "speedLevel": null,
+            "direction": null
+          }
+        },
+        {
+          "id": "step-6",
+          "kind": "rest",
+          "title": "Abkühlen lassen",
+          "instruction": "Schokoladenmasse bei ausgeschalteter Maschine 5 Minuten abkühlen lassen; sie soll höchstens handwarm sein, bevor Eier hinzukommen.",
+          "ingredients": [],
+          "image": {
+            "url": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4/cover",
+            "source": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4",
+            "alt": "Gericht: Schokoladen-Brownies",
+            "kind": "photo"
+          },
+          "settings": {
+            "durationSeconds": 300,
+            "temperatureC": null,
+            "speedLevel": null,
+            "direction": null
+          }
+        },
+        {
+          "id": "step-7",
+          "kind": "weigh",
+          "title": "Zucker einwiegen",
+          "instruction": "Zucker in den Topf einwiegen.",
+          "ingredients": [
+            {
+              "name": "Zucker",
+              "amount": 120,
+              "unit": "g"
+            }
+          ],
+          "image": {
+            "url": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4/cover",
+            "source": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4",
+            "alt": "Gericht: Schokoladen-Brownies",
+            "kind": "photo"
+          },
+          "settings": {
+            "durationSeconds": null,
+            "temperatureC": null,
+            "speedLevel": null,
+            "direction": null
+          }
+        },
+        {
+          "id": "step-8",
+          "kind": "prepare",
+          "title": "Eier zugeben",
+          "instruction": "Eier einzeln in einer Schale aufschlagen und ohne Schalenreste zur handwarmen Schokoladenmasse in den Topf geben.",
+          "ingredients": [
+            {
+              "name": "Eier",
+              "amount": 2,
+              "unit": "Stück"
+            }
+          ],
+          "image": {
+            "url": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4/cover",
+            "source": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4",
+            "alt": "Gericht: Schokoladen-Brownies",
+            "kind": "photo"
+          },
+          "settings": {
+            "durationSeconds": null,
+            "temperatureC": null,
+            "speedLevel": null,
+            "direction": null
+          }
+        },
+        {
+          "id": "step-9",
+          "kind": "machine",
+          "title": "Eier einarbeiten",
+          "instruction": "Die bereits zugegebenen Eier in die handwarme Schokoladenmasse einarbeiten, bis die Masse gleichmäßig ist.",
+          "ingredients": [],
+          "image": {
+            "url": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4/cover",
+            "source": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4",
+            "alt": "Gericht: Schokoladen-Brownies",
+            "kind": "photo"
+          },
+          "settings": {
+            "durationSeconds": 45,
+            "temperatureC": 0,
+            "speedLevel": 2,
+            "direction": "clockwise"
+          }
+        },
+        {
+          "id": "step-10",
+          "kind": "weigh",
+          "title": "Trockene Zutaten einwiegen",
+          "instruction": "Mehl, Backkakao und Salz nacheinander direkt zur Masse in den Topf einwiegen.",
+          "ingredients": [
+            {
+              "name": "Weizenmehl Type 405",
+              "amount": 70,
+              "unit": "g"
+            },
+            {
+              "name": "Backkakao",
+              "amount": 15,
+              "unit": "g"
+            },
+            {
+              "name": "Salz",
+              "amount": 1,
+              "unit": "g"
+            }
+          ],
+          "image": {
+            "url": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4/cover",
+            "source": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4",
+            "alt": "Gericht: Schokoladen-Brownies",
+            "kind": "photo"
+          },
+          "settings": {
+            "durationSeconds": null,
+            "temperatureC": null,
+            "speedLevel": null,
+            "direction": null
+          }
+        },
+        {
+          "id": "step-11",
+          "kind": "machine",
+          "title": "Teig kurz verrühren",
+          "instruction": "Nur kurz vermischen; anschließend bei Stillstand verbliebene Mehlspuren mit dem Spatel unterheben.",
+          "ingredients": [],
+          "image": {
+            "url": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4/cover",
+            "source": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4",
+            "alt": "Gericht: Schokoladen-Brownies",
+            "kind": "photo"
+          },
+          "settings": {
+            "durationSeconds": 20,
+            "temperatureC": 0,
+            "speedLevel": 1,
+            "direction": "clockwise"
+          }
+        },
+        {
+          "id": "step-12",
+          "kind": "finish",
+          "title": "Brownies backen",
+          "instruction": "Teig in die vorbereitete Form füllen. Im vorgeheizten Backofen bei 175 °C Ober-/Unterhitze etwa 22–28 Minuten backen. Die Oberfläche ist fest, ein Holzstäbchen zeigt feuchte Krümel, aber keinen flüssigen Teig.",
+          "ingredients": [],
+          "image": {
+            "url": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4/cover",
+            "source": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4",
+            "alt": "Gericht: Schokoladen-Brownies",
+            "kind": "photo"
+          },
+          "settings": {
+            "durationSeconds": null,
+            "temperatureC": null,
+            "speedLevel": null,
+            "direction": null
+          }
+        },
+        {
+          "id": "step-13",
+          "kind": "rest",
+          "title": "Abkühlen lassen",
+          "instruction": "In der Form mindestens 30 Minuten abkühlen lassen, dann in 8 kleine Stücke schneiden: 2 Stücke je Portion.",
+          "ingredients": [],
+          "image": {
+            "url": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4/cover",
+            "source": "https://app.kalomatik.ai/api/recipes/21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4",
+            "alt": "Gericht: Schokoladen-Brownies",
+            "kind": "photo"
+          },
+          "settings": {
+            "durationSeconds": 1800,
+            "temperatureC": null,
+            "speedLevel": null,
+            "direction": null
+          }
+        }
+      ]
+    },
+    "reviewStatus": "ai-draft",
+    "sourceRevision": "1f0091e05e0806441ccc86f07764a3a7ad016e86afd37efc40d1ea5dd2757e71",
+    "recipeId": "21d9ca2fa1bed9e2f79a51d5f0a2ed9953c9f5451a78b4b03f9f1cd8f136d3e4",
+    "servings": 4,
+    "private": false,
+    "curated": true,
+    "profileId": "xiaomi-c3-normal-2026-10-18-r1",
+    "preparationRevision": "c3-guided-actions-v3",
+    "stepImagesMatch": true,
+    "createdAt": 1,
+    "programDigest": "4b468329d19ae77cac5031710666b32bfdf2d90012baf4bc14eb97552d80e215",
+    "provenance": {
+      "title": "Cookidoo: Brownies",
+      "url": "https://cookidoo.thermomix.com/recipes/recipe/en-US/r168965",
+      "access": "public-ingredients-only",
+      "adaptation": "Eigene kleinere Backmenge ohne Nüsse und eigene Zubereitung; kein Originalimport.",
+      "kind": "authored-adaptation",
+      "cookingTested": false,
+      "batch": "starter-recipes-2026-10-19"
+    }
+  }
+}

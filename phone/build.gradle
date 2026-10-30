@@ -1,0 +1,9 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'com.kitchenos.share'
+    compileSdk 34
+    defaultConfig { testInstrumentationRunner providers.gradleProperty("phoneInstrumentationRunner").getOrElse("com.kitchenos.share.tests.ShareInstrumentation"); applicationId 'com.kitchenos.share'; minSdk 26; targetSdk 34; versionCode 6; versionName '0.6-phone-setup' }
+    sourceSets.main.java.srcDirs += '../common/src/main/java'
+    sourceSets.main.res.srcDirs += '../common/src/main/res'
+    compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
+}

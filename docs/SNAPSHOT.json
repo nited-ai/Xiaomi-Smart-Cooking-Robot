@@ -1,0 +1,19 @@
+{
+  "snapshotDate": "2026-10-30",
+  "sourceBaseCommit": "f3b788d0",
+  "includesUncommittedDevelopment": true,
+  "scope": "First-party Android clients, native controller, shared contracts, backend and offline tests.",
+  "excluded": [
+    "Git history",
+    "OEM APKs, decompiled source and artwork",
+    "firmware and recovery images",
+    "credentials and signing keys",
+    "personal backups and raw device logs",
+    "branding/provider imagery and photographic/3D assets with mixed provenance",
+    "production deployment configuration and operational scripts",
+    "bulk catalog/image-library exports and their dataset-dependent tests",
+    "historical QA archives, installers and compiled APKs",
+    "build caches and dependencies"
+  ],
+  "copiedFiles": 381
+}

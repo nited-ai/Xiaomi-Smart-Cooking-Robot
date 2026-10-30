@@ -1,0 +1,21 @@
+package com.kitchenos.connect.ui;
+
+import org.json.JSONObject;
+import java.text.Normalizer;
+import java.util.Locale;
+
+/** Native projection of the deployed Calomatik portion-contract.js (ingredient-cutout-v3).
+ * Quantity is requested, never estimated from a photo. Shared service selects approved ranges. */
+public final class IngredientImageRequest {
+    public static JSONObject from(JSONObject item){
+        if(item==null)return null;String name=canonical(item.optString("name"));boolean legacy=item.isNull("amount")&&!item.isNull("menge_g");double amount=item.optDouble(legacy?"menge_g":"amount",Double.NaN);String unit=canonical(legacy?"g":item.optString("unit","g"));double factor;String target;
+        switch(unit){case "g":case "gram":case "grams":case "gramm":factor=1;target="g";break;case "kg":case "kilogram":case "kilograms":case "kilogramm":factor=1000;target="g";break;case "mg":factor=.001;target="g";break;case "ml":case "milliliter":case "milliliters":factor=1;target="ml";break;case "l":case "liter":factor=1000;target="ml";break;case "cl":factor=10;target="ml";break;case "stück":case "stk":case "stk.":case "piece":factor=1;target="piece";break;default:double grams=item.optDouble("menge_g",item.optDouble("massG",Double.NaN));if(!Double.isFinite(grams)||grams<=0)return null;try{return from(new JSONObject(item.toString()).put("amount",grams).put("unit","g"));}catch(Exception invalid){return null;}}
+        amount=Math.round(amount*factor*1000)/1000d;if(name.isEmpty()||name.length()>100||!name.matches("[\\p{L}\\p{N} ,().%+'’/\\-]+")||!name.matches(".*\\p{L}.*")||!Double.isFinite(amount)||amount<=0||amount>100000)return null;
+        try{JSONObject result=new JSONObject().put("style","ingredient-cutout-v3").put("name",name).put("amount",amount).put("unit",target);double mass=item.optDouble("massG",item.optDouble("menge_g",Double.NaN));if(!target.equals("g")&&Double.isFinite(mass)&&mass>0&&mass<=100000)result.put("massG",Math.round(mass*1000)/1000d);return result;}catch(Exception invalid){return null;}
+    }
+    /** Same approved-asset selection as Calomatik's portion-contract and portion-images adapters. */
+    public static boolean approved(JSONObject request,JSONObject asset){try{if(asset==null||!"approved".equals(asset.optString("status"))||!request.getString("style").equals(asset.optString("style"))||!request.getString("name").equals(asset.optString("name"))||!request.getString("unit").equals(asset.optString("unit")))return false;double amount=request.getDouble("amount"),representative=asset.getDouble("amount");if(!Double.isFinite(representative)||representative<=0)return false;JSONObject range=asset.getJSONObject("range");double lo=range.getDouble("min"),hi=range.getDouble("max");if(!(lo>0&&lo<=amount&&hi>=amount&&Double.isFinite(hi)))return false;boolean mass=request.optDouble("massG",0)>0,other=asset.optDouble("massG",0)>0;if(mass!=other)return false;if(mass&&Math.round(request.getDouble("massG")/amount*1000)!=Math.round(asset.getDouble("massG")/representative*1000))return false;double span=asset.getDouble("spanCm");if(!Double.isFinite(span)||span<=0)return false;org.json.JSONArray bounds=asset.getJSONArray("bounds");if(bounds.length()!=4)return false;for(int i=0;i<4;i++){double value=bounds.getDouble(i);if(!Double.isFinite(value)||value<0||value>1)return false;}return bounds.getDouble(2)>bounds.getDouble(0)&&bounds.getDouble(3)>bounds.getDouble(1);}catch(Exception invalid){return false;}}
+    private static String canonical(String value){String name=Normalizer.normalize(value,Normalizer.Form.NFKC).trim().toLowerCase(Locale.GERMAN).replaceAll("\\s+"," ");switch(name){case "eier":return "ei";case "tomaten":return "tomate";case "mandel":return "mandeln";case "blaubeeren":return "heidelbeeren";case "wiener würstchen":return "wiener";case "wiener würstchen (gekocht)":return "wiener (gekocht)";default:return name;}}
+    public static String quantity(JSONObject request){double amount=request.optDouble("amount");String value=java.math.BigDecimal.valueOf(amount).stripTrailingZeros().toPlainString();return value+request.optString("unit")+(request.has("massG")?":"+request.optDouble("massG"):"");}
+    private IngredientImageRequest(){}
+}

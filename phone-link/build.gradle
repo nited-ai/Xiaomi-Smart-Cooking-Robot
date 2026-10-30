@@ -1,0 +1,15 @@
+plugins { id 'com.android.library' }
+android {
+    namespace 'com.kitchenos.machinelink'
+    compileSdk 34
+    defaultConfig { minSdk 26 }
+    sourceSets.main.java {
+        srcDirs = ['../phone/src/main/java', '../common/src/main/java']
+        include 'com/kitchenos/share/PhoneSetupActivity.java', 'com/kitchenos/share/PhoneLink.java'
+        srcDir 'src/main/java'
+        include 'com/kitchenos/machinelink/MachineEntryActivity.java'
+        include 'com/kitchenos/common/OnboardingUi.java', 'com/kitchenos/common/SetupCode.java', 'com/kitchenos/common/Pairing.java', 'com/kitchenos/common/Ui.java', 'com/kitchenos/common/PlateDrawable.java'
+    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
+}
+dependencies { implementation 'com.google.android.gms:play-services-code-scanner:16.1.0' }

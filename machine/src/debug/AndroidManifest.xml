@@ -1,0 +1,6 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <instrumentation android:name=".ConnectSmoke" android:targetPackage="com.kitchenos.connect" android:label="Recipe transport checks (no cooker access)"/>
+  <instrumentation android:name=".KitchenSmoke" android:targetPackage="com.kitchenos.connect" android:label="Emulator-only kitchen/control state checks"/>
+  <instrumentation android:name=".KitchenUiSmoke" android:targetPackage="com.kitchenos.connect" android:label="Emulator-only native views and screenshots"/>
+  <instrumentation android:name=".CatalogueSmoke" android:targetPackage="com.kitchenos.connect" android:label="Emulator-only catalogue conversion and public read checks"/>
+</manifest>

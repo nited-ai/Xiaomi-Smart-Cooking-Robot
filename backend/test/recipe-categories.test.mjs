@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {publicCategories} from '../integrations/recipe-search/recipe-categories.mjs';
+const row={id:'a'.repeat(64),foodIdentity:'b'.repeat(64),guideStatus:'ready'};
+const catalog={revision:'v1',categories:[{id:'breakfast',title:'Frühstück',default:true}],assignments:[{recipeId:row.id,foodIdentity:row.foodIdentity,categoryIds:['breakfast','breakfast']}]};
+test('projects shared definition and unique explicit memberships',()=>{const result=publicCategories(catalog,[row]);assert.equal(result.categories[0].count,1);assert.deepEqual(result.categories[0].recipeIds,[row.id]);assert.equal(result.categories[0].default,true);});
+test('withdrawn or nonpublic recipes do not escape via a category membership',()=>assert.equal(publicCategories(catalog,[]).categories[0].count,0));
+test('changed ingredient identity requires a new review',()=>assert.equal(publicCategories(catalog,[{...row,foodIdentity:'c'.repeat(64)}]).categories[0].count,0));
+test('incomplete recipes do not enter recipe categories',()=>assert.equal(publicCategories(catalog,[{...row,guideStatus:'missing'}]).categories[0].count,0));
+test('missing catalog supports an empty offline-compatible response',()=>assert.deepEqual(publicCategories(null,[row]).categories,[]));
+test('invalid labels and unknown assignments are excluded',()=>{assert.deepEqual(publicCategories({categories:[{id:'a',title:'https://x.example'}],assignments:catalog.assignments},[row]).categories,[]);});
+test('variant counts deduplicate food identities without dropping IDs',()=>{const other={...row,id:'c'.repeat(64)};const value=publicCategories({...catalog,assignments:[...catalog.assignments,{...catalog.assignments[0],recipeId:other.id}]},[row,other]);assert.equal(value.categories[0].count,1);assert.equal(value.categories[0].recipeIds.length,2);});

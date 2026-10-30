@@ -1,0 +1,51 @@
+{
+  "source": "output/qa/code19-review-r2/source/App/own/KitchenOSConnect/backend/src/assistant.mjs",
+  "sourceSha256": "3412c1367bd3346fe118ad8c29fe87cce6df7e520819a0d0c96cc072731a49c3",
+  "request": {
+    "requestId": "12345678-1234-1234-1234-123456789abc",
+    "message": "Mein Vorrat",
+    "intent": "chat",
+    "consent": true,
+    "preferences": {
+      "aiConsent": true,
+      "allergies": "Nüsse"
+    },
+    "pantry": [],
+    "plans": [],
+    "photo": {
+      "mimeType": "image/jpeg",
+      "data": "/9j/2Q=="
+    },
+    "conversation": [
+      {
+        "role": "user",
+        "text": "Eine frühere Frage"
+      }
+    ],
+    "uiScene": {
+      "revision": "23456789-1234-1234-1234-123456789abc",
+      "controls": [
+        {
+          "id": "note",
+          "label": "Hinweis",
+          "enabled": true
+        }
+      ],
+      "context": {
+        "page": "step",
+        "stepTitle": "Vorbereiten",
+        "instruction": "Zutaten bereitstellen."
+      }
+    }
+  },
+  "normalized": {
+    "legacy": "{\"requestId\":\"12345678-1234-1234-1234-123456789abc\",\"message\":\"Mein Vorrat\",\"intent\":\"chat\",\"preferences\":{\"diet\":\"\",\"allergies\":\"Nüsse\",\"dislikes\":\"\",\"notes\":\"\"},\"pantry\":[],\"plans\":[],\"photo\":{\"mimeType\":\"image/jpeg\",\"data\":\"/9j/2Q==\"},\"photoPurpose\":\"pantry\",\"uiScene\":{\"revision\":\"23456789-1234-1234-1234-123456789abc\",\"controls\":[{\"id\":\"note\",\"label\":\"Hinweis\",\"enabled\":true}],\"context\":{\"page\":\"step\",\"stepTitle\":\"Vorbereiten\",\"instruction\":\"Zutaten bereitstellen.\"}},\"conversation\":[{\"role\":\"user\",\"text\":\"Eine frühere Frage\"}]}",
+    "empty": "{\"requestId\":\"12345678-1234-1234-1234-123456789abc\",\"message\":\"Mein Vorrat\",\"intent\":\"chat\",\"preferences\":{\"diet\":\"\",\"allergies\":\"Nüsse\",\"dislikes\":\"\",\"notes\":\"\"},\"pantry\":[],\"plans\":[],\"plannedMeals\":[],\"photo\":{\"mimeType\":\"image/jpeg\",\"data\":\"/9j/2Q==\"},\"photoPurpose\":\"pantry\",\"uiScene\":{\"revision\":\"23456789-1234-1234-1234-123456789abc\",\"controls\":[{\"id\":\"note\",\"label\":\"Hinweis\",\"enabled\":true}],\"context\":{\"page\":\"step\",\"stepTitle\":\"Vorbereiten\",\"instruction\":\"Zutaten bereitstellen.\"}},\"conversation\":[{\"role\":\"user\",\"text\":\"Eine frühere Frage\"}]}"
+  },
+  "fingerprints": {
+    "legacy": "a6452d07e5279d16307cb748c4a15061b5bfb9fe5c742f49388c15064c82dc52",
+    "empty": "585dfa7d7876406d580978bb639f3907b12b2471e9651c47e9d158200f5a41a9"
+  },
+  "legacySource": "output/qa/code18-review-r4/source/App/own/KitchenOSConnect/backend/src/assistant.mjs",
+  "legacySourceSha256": "023ee297608d1488d3f4144bff9e6c9645606a1f20382e0ff700bbfb55c3d0c7"
+}

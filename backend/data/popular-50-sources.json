@@ -1,0 +1,154 @@
+{
+  "retrievedOn": "2026-10-21",
+  "method": "Redaktionelle Auswahl von 50 in Bestenlisten genannten Gerichten; keine globale Rangfolge. Eigenständige Kalomatik-Rezeptfassungen, Mengen und Abläufe sind keine Originalimporte.",
+  "collections": [
+    {
+      "url": "https://cookidoo.de/collection/de-DE/p/col500931",
+      "kind": "official-cookidoo-collection",
+      "region": "DE",
+      "limitation": "Quelle für den Kichererbsensalat; keine veröffentlichte globale Top-50-Rangfolge."
+    },
+    {
+      "url": "https://www.zaubertopf-club.de/artikel/beliebtesten-rezepte-2024-thermomix.html",
+      "kind": "publisher-community-top10",
+      "year": 2024,
+      "region": "DE"
+    },
+    {
+      "url": "https://www.barbara-ibach.de/rezepte/",
+      "kind": "consultant-reported-demand",
+      "year": 2026,
+      "region": "DE",
+      "limitation": "Keine veröffentlichten Suchvolumenzahlen."
+    },
+    {
+      "url": "https://thermomeegs.com.au/australias-top-thermomix-recipes-of-2025/",
+      "kind": "consultant-republished-cookidoo-most-cooked",
+      "year": 2025,
+      "region": "AU",
+      "limitation": "Australische Liste; Auswahl nicht gleich deutscher Top-50-Rang."
+    }
+  ],
+  "australianRecipes": [
+    {
+      "title": "Basil pesto",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r68000"
+    },
+    {
+      "title": "Five seed bread",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r68697"
+    },
+    {
+      "title": "Focaccia",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r68702"
+    },
+    {
+      "title": "Naan bread",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r80110"
+    },
+    {
+      "title": "Zucchini slice",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r79761"
+    },
+    {
+      "title": "Banana bread",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r69073"
+    },
+    {
+      "title": "Basic muffin mix",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r246742"
+    },
+    {
+      "title": "Best ever carrot cake",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r823068"
+    },
+    {
+      "title": "Buttermilk scones",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r70903"
+    },
+    {
+      "title": "Chocolate chip cookies",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r68181"
+    },
+    {
+      "title": "Cinnamon buns",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r695149"
+    },
+    {
+      "title": "Too easy chocolate cake",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r69110"
+    },
+    {
+      "title": "American-style pancakes",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r66932"
+    },
+    {
+      "title": "Porridge",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r68370"
+    },
+    {
+      "title": "Custard",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r490445"
+    },
+    {
+      "title": "Lemonade",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r68183"
+    },
+    {
+      "title": "Beef stroganoff",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r68522"
+    },
+    {
+      "title": "Beef tacos",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r493976"
+    },
+    {
+      "title": "Chicken teriyaki (Skinnymixers)",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r536578"
+    },
+    {
+      "title": "Murgh makhani (Butter chicken)",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r648851"
+    },
+    {
+      "title": "Classic mushroom risotto",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r68517"
+    },
+    {
+      "title": "Lasagne bolognese",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r67133"
+    },
+    {
+      "title": "Béchamel sauce",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r67755"
+    },
+    {
+      "title": "Guacamole",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r68750"
+    },
+    {
+      "title": "Hommus",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r68763"
+    },
+    {
+      "title": "Lemon curd",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r556933"
+    },
+    {
+      "title": "Coleslaw",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r68692"
+    },
+    {
+      "title": "Gratin dauphinois",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r99393"
+    },
+    {
+      "title": "Tomato pasta sauce",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r67999"
+    },
+    {
+      "title": "Minestrone",
+      "url": "https://cookidoo.com.au/recipes/recipe/en-AU/r67069"
+    }
+  ]
+}

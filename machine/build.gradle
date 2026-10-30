@@ -1,0 +1,65 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'com.kitchenos.connect'
+    buildFeatures { buildConfig true }
+    compileSdk 34
+    defaultConfig { testInstrumentationRunner providers.gradleProperty("instrumentationRunner").getOrElse("com.kitchenos.connect.tests.ApplianceInstrumentation"); applicationId 'com.kitchenos.connect'; minSdk 26; targetSdk 28; versionCode 191; versionName '0.67.0-frying-motor-intervals'; ndk { abiFilters 'armeabi-v7a', 'x86_64' } }
+    defaultConfig {
+        // Public endpoint only; never put provider secrets or service-account keys here.
+        buildConfigField 'String', 'KITCHEN_API_BASE', '"' + providers.gradleProperty('kitchenApiBase').getOrElse('').replace('\\','\\\\').replace('"','\\"') + '"'
+    }
+    packaging { jniLibs { useLegacyPackaging true } }
+    buildTypes {
+        // Local appliance build: preserve the installed development certificate
+        // and app data, but let ART execute non-debuggable application code.
+        // No shrinking: the existing UI integration uses reflection.
+        appliance {
+            initWith release
+            signingConfig signingConfigs.debug
+            debuggable false
+            minifyEnabled false
+            versionNameSuffix '-appliance'
+        }
+    }
+    sourceSets.main.java.srcDirs += '../common/src/main/java'
+    sourceSets.main.res.srcDirs += '../common/src/main/res'
+    sourceSets.main.jniLibs.srcDir layout.buildDirectory.dir('generated/standbyJni')
+    // Appliance-only sideload: target 28 preserves Android 10's direct Wi-Fi API.
+    // This APK is intentionally not a Google Play distribution.
+    lint { disable 'ExpiredTargetSdkVersion' }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
+}
+dependencies { implementation 'com.google.zxing:core:3.5.3'; testImplementation 'junit:junit:4.13.2' }
+
+// Separate executable: only MCU read requests, never the OEM power-cut command.
+// Build from source on every source/toolchain change; leave cooking bridge pins intact.
+['armeabi-v7a':'armv7a-linux-androideabi26', 'x86_64':'x86_64-linux-android26'].each { abi, target ->
+    def output = layout.buildDirectory.file("generated/standbyJni/${abi}/libkitchenos_standby.so")
+    def compiler = new File(android.sdkDirectory, 'ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe')
+    def buildStandby = tasks.register("buildStandby${abi.replaceAll('[^a-zA-Z0-9]', '')}", Exec) {
+        inputs.file('src/main/cpp/standby.c')
+        inputs.file(compiler)
+        outputs.file(output)
+        doFirst { output.get().asFile.parentFile.mkdirs() }
+        commandLine compiler, "--target=${target}", '-O2', '-fPIE', '-pie', '-Wall', '-Wextra', '-Werror',
+                file('src/main/cpp/standby.c'), '-o', output.get().asFile
+    }
+    tasks.named('preBuild').configure { dependsOn(buildStandby) }
+}
+
+tasks.register('verifyControllerPins') {
+    doLast {
+        def contract = rootProject.file('common/control-profile.json')
+        def profile = new groovy.json.JsonSlurper().parse(contract)
+        def sha = { File source -> java.security.MessageDigest.getInstance('SHA-256').digest(source.bytes).encodeHex().toString() }
+        [[rootProject.file(profile.sourcePath), profile.sourceSha256],
+         [file('src/main/cpp/control_profile.h'), profile.headerSha256],
+         [file('src/main/jniLibs/armeabi-v7a/libkitchenos_bridge.so'), profile.armSha256],
+         [file('src/main/jniLibs/x86_64/libkitchenos_bridge.so'), profile.x64Sha256]].each { pair ->
+            if (sha(pair[0]) != pair[1]) throw new GradleException('Controller source/artifact differs from contract: ' + pair[0])
+        }
+        if (!java.util.Arrays.equals(contract.bytes, rootProject.file('backend/integrations/control-profile.json').bytes)) throw new GradleException('Backend controller contract differs')
+        if (!file('src/main/java/com/kitchenos/connect/control/ControlProfile.java').getText('UTF-8').contains(sha(contract))) throw new GradleException('Regenerate the Java controller contract')
+    }
+}
+tasks.named('preBuild').configure { dependsOn('verifyControllerPins') }
