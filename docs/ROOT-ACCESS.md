@@ -1,5 +1,12 @@
 # Getting closer to your own hardware
 
+**Looking for the actual steps?** Use the new
+[device-access and installation guide](INSTALLATION.md) or
+[die deutsche Schritt-für-Schritt-Anleitung](INSTALLATION.de.md).
+It covers the factory hotspot / NET ADB entry, root checks, source build,
+APK installation, first checks and maintenance cleanup. This page records the
+evidence boundary behind those steps.
+
 The reason for privileged access is practical: an ordinary Android application
 cannot open the appliance's MCU serial port. The control client needs that local
 connection to communicate with the motor / heater controller and receive state.

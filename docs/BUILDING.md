@@ -1,5 +1,9 @@
 # Building and local development
 
+For the full device setup sequence, including the original factory Network ADB
+entry and APK installation, use [the installation guide](INSTALLATION.md)
+([Deutsch](INSTALLATION.de.md)). This page describes the build and configuration.
+
 ## Backend tests
 
 Use Node.js 22. From `backend/`, run `npm ci`, `npm run build`, then `npm test`.

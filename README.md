@@ -12,6 +12,8 @@
 
 [See the interface](#see-what-we-mean) · [Why we built it](#the-pot-belongs-on-screen) · [Bring your recipes](#the-web-is-bigger-than-one-recipe-catalogue) · [Build with us](#for-the-people-who-want-to-open-it-up)
 
+**Set up your robot:** [Step-by-step guide (English)](docs/INSTALLATION.md) · [Schritt für Schritt (Deutsch)](docs/INSTALLATION.de.md)
+
 </div>
 
 You bought a powerful cooking robot. You should be able to decide how you use it.
@@ -121,7 +123,10 @@ Today this is a **developer preview for compatible, prepared hardware**. The
 reference setup uses privileged/root access. The repository contains the
 application and controller source; it does not yet provide a universal one-click
 root tool or consumer installer. If your first question is how to get access to
-the hardware, start with [root access and the current entry point](docs/ROOT-ACCESS.md).
+the hardware, start with the **[device-access and installation guide](docs/INSTALLATION.md)**
+([Deutsch](docs/INSTALLATION.de.md)). It explains the factory Network ADB entry,
+the separate Magisk requirement, how to build/install the app and what to check
+before using the controls.
 
 ## For the people who want to open it up
 

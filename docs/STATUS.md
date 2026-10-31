@@ -9,6 +9,12 @@ development / emulator captures, not new hardware validation or a public-APK
 visual acceptance test. The application/control implementation is unchanged by
 this presentation update.
 
+An English and German setup guide was added on 2026-10-31. Its command examples
+were checked against the current source and documented reference entry. Writing
+the guide did not perform a new root, APK installation or hardware trial. Root
+Network ADB and the app's required Magisk runtime remain separate prerequisites;
+the stock locked-device persistent-root gap is still open.
+
 This is a fresh-history export of the development worktree based on private
 handoff commit `f3b788d0`, including later uncommitted control changes. It does not
 claim to reproduce the last physically installed APK. The project board recorded
