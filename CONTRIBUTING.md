@@ -1,6 +1,6 @@
 # Contributing
 
-KitchenOS is an early source release. Small, focused changes with reproducible
+Xiaomi Smart Cooking Robot is an early source release. Small, focused changes with reproducible
 evidence are the most useful contributions.
 
 1. Open an issue describing the behavior or improvement and the relevant module.

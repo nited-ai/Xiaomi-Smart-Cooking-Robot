@@ -1,0 +1,23 @@
+{
+  "purpose": "Unmodified archived UI screenshots for project documentation. Not a current public-build acceptance test.",
+  "screenshots": [
+    {
+      "file": "frying.png",
+      "sha256": "e7a9cb9fc4cfcf31260f2708839da615d0dcef4936d861e252d82577120ebb94",
+      "captured": "2026-10-26",
+      "sourceArchive": "KitchenOS-adaptive/output/qa/adaptive-cooking-2026-10-26/frying-choices.png",
+      "evidence": "Build 191 development / emulator capture",
+      "description": "Frying controls with stirring-interval choices. Physical heating during the new intervals was not validated.",
+      "modified": false
+    },
+    {
+      "file": "cleaning.png",
+      "sha256": "9b656416c29f90660be0c29ba476b6460943eb4f1224b87eef51a69e57c73ae8",
+      "captured": "2026-10-26",
+      "sourceArchive": "KitchenOS-adaptive/output/qa/adaptive-cooking-2026-10-26/cleaning-information.png",
+      "evidence": "Build 191 development / emulator capture",
+      "description": "Cleaning-program guidance in the current fixed-vessel layout. This view is UI evidence, not a physical cooking validation.",
+      "modified": false
+    }
+  ]
+}

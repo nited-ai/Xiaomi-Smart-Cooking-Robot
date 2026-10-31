@@ -2,6 +2,13 @@
 
 Publication date: 2026-10-30.
 
+Public presentation updated on 2026-10-31 under the name **Xiaomi Smart Cooking
+Robot**. The gallery contains only the two native UI captures from Build 191's
+2026-10-26 QA set. It does not include older UI revisions. These are existing
+development / emulator captures, not new hardware validation or a public-APK
+visual acceptance test. The application/control implementation is unchanged by
+this presentation update.
+
 This is a fresh-history export of the development worktree based on private
 handoff commit `f3b788d0`, including later uncommitted control changes. It does not
 claim to reproduce the last physically installed APK. The project board recorded

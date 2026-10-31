@@ -1,6 +1,6 @@
 # Third-party notices
 
-The root MIT license covers original KitchenOS code and documentation. It does
+The root MIT license covers original project code and documentation. It does
 not replace upstream licenses.
 
 - **Tabler Icons**: MIT; the retained notice is
@@ -17,5 +17,10 @@ not replace upstream licenses.
 
 Manufacturer firmware, decompiled manufacturer apps, OEM artwork, provider logos,
 product photography and mixed-origin 3D assets are excluded from this publication.
+This exclusion concerns standalone runtime assets. Two unaltered current native-UI
+screenshots are included for project presentation; they show the full development
+build and can depict product imagery absent from the minimal public application.
+Those depicted third-party materials are not relicensed under MIT. Source and
+capture provenance are recorded in [`docs/images/`](docs/images/README.md).
 Names such as Xiaomi, Chunmi and Kalomatik identify existing products / projects
 and do not imply endorsement or a trademark license.

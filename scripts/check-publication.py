@@ -9,8 +9,22 @@ root=Path(__file__).resolve().parents[1]
 ignored={'.git','.gradle','build','node_modules','__pycache__'}
 files=[p for p in root.rglob('*') if p.is_file() and not ignored.intersection(p.relative_to(root).parts)]
 errors=[]
+manifest_path=root/'docs/images/manifest.json'
+approved_images={}
+if manifest_path.is_file():
+    manifest=json.loads(manifest_path.read_text(encoding='utf-8'))
+    for entry in manifest['screenshots']:
+        name=entry['file']
+        if Path(name).name!=name or not name.endswith('.png'):
+            errors.append('invalid screenshot manifest path')
+        else: approved_images['docs/images/'+name]=entry['sha256']
+    for name in approved_images:
+        if not (root/name).is_file(): errors.append(name+': missing documented screenshot')
 for p in files:
     relative=p.relative_to(root).as_posix()
+    if relative in approved_images:
+        if hashlib.sha256(p.read_bytes()).hexdigest()!=approved_images[relative]: errors.append(relative+': screenshot checksum mismatch')
+        continue
     if p.suffix.lower() in {'.apk','.aab','.ab','.db','.img','.jks','.keystore','.pem','.key','.glb','.png','.jpg','.webp'}:
         errors.append(relative+': excluded artifact type')
     if p.name in {'local.properties','google-services.json'} or p.name.startswith('.env'):

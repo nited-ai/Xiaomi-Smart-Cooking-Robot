@@ -1,4 +1,4 @@
-# KitchenOS service modules
+# Xiaomi Smart Cooking Robot service modules
 
 Backend source for account/device flows, recipe identity and validation, pantry
 handling and optional AI integrations. This is a developer snapshot; production
