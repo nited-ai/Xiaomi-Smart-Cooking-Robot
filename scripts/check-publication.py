@@ -56,7 +56,7 @@ if sha(profile_path) not in (root/'machine/src/main/java/com/kitchenos/connect/c
     errors.append('generated Java profile is stale')
 if "getOrElse('')" not in (root/'machine/build.gradle').read_text():
     errors.append('cloud API must default to disabled')
-for name in ['README.md','LICENSE','CONTRIBUTING.md','THIRD_PARTY_NOTICES.md','docs/BUILDING.md','docs/STATUS.md','licenses/Apache-2.0.txt']:
+for name in ['README.md','LICENSE','CONTRIBUTING.md','THIRD_PARTY_NOTICES.md','docs/BUILDING.md','docs/STATUS.md','docs/INSTALLATION.md','docs/STOCK-INSTALL-AUDIT.md','tools/factory_access.py','licenses/Apache-2.0.txt']:
     if not (root/name).is_file(): errors.append('missing documentation: '+name)
 if errors:
     print('\n'.join(errors))

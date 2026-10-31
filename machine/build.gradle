@@ -1,9 +1,10 @@
 plugins { id 'com.android.application' }
 android {
+    testBuildType 'appliance'
     namespace 'com.kitchenos.connect'
     buildFeatures { buildConfig true }
     compileSdk 34
-    defaultConfig { testInstrumentationRunner providers.gradleProperty("instrumentationRunner").getOrElse("com.kitchenos.connect.tests.ApplianceInstrumentation"); applicationId 'com.kitchenos.connect'; minSdk 26; targetSdk 28; versionCode 191; versionName '0.67.0-frying-motor-intervals'; ndk { abiFilters 'armeabi-v7a', 'x86_64' } }
+    defaultConfig { testInstrumentationRunner providers.gradleProperty("instrumentationRunner").getOrElse("com.kitchenos.connect.tests.FactoryAccessInstrumentation"); applicationId 'com.kitchenos.connect'; minSdk 26; targetSdk 28; versionCode 192; versionName '0.68.0-factory-session-candidate'; ndk { abiFilters 'armeabi-v7a', 'x86_64' } }
     defaultConfig {
         // Public endpoint only; never put provider secrets or service-account keys here.
         buildConfigField 'String', 'KITCHEN_API_BASE', '"' + providers.gradleProperty('kitchenApiBase').getOrElse('').replace('\\','\\\\').replace('"','\\"') + '"'
@@ -24,6 +25,7 @@ android {
     sourceSets.main.java.srcDirs += '../common/src/main/java'
     sourceSets.main.res.srcDirs += '../common/src/main/res'
     sourceSets.main.jniLibs.srcDir layout.buildDirectory.dir('generated/standbyJni')
+    sourceSets.main.jniLibs.srcDir layout.buildDirectory.dir('generated/factoryAccessJni')
     // Appliance-only sideload: target 28 preserves Android 10's direct Wi-Fi API.
     // This APK is intentionally not a Google Play distribution.
     lint { disable 'ExpiredTargetSdkVersion' }
@@ -63,3 +65,18 @@ tasks.register('verifyControllerPins') {
     }
 }
 tasks.named('preBuild').configure { dependsOn('verifyControllerPins') }
+
+// Separate owner-started access broker. It never opens the MCU by itself.
+['armeabi-v7a':'armv7a-linux-androideabi29', 'x86_64':'x86_64-linux-android29'].each { abi, target ->
+    def output = layout.buildDirectory.file("generated/factoryAccessJni/${abi}/libcooking_robot_access.so")
+    def compiler = new File(android.sdkDirectory, 'ndk/27.1.12297006/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe')
+    def buildAccess = tasks.register("buildFactoryAccess${abi.replaceAll('[^a-zA-Z0-9]', '')}", Exec) {
+        inputs.file('src/main/cpp/factory_access.c')
+        inputs.file(compiler)
+        outputs.file(output)
+        doFirst { output.get().asFile.parentFile.mkdirs() }
+        commandLine compiler, "--target=${target}", '-std=c11', '-O2', '-fPIE', '-pie', '-Wall', '-Wextra', '-Werror',
+                file('src/main/cpp/factory_access.c'), '-o', output.get().asFile
+    }
+    tasks.named('preBuild').configure { dependsOn(buildAccess) }
+}

@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <instrumentation android:name="com.kitchenos.connect.tests.FactoryAccessInstrumentation"
+        android:targetPackage="com.kitchenos.connect" />
+    <instrumentation android:name="com.kitchenos.connect.tests.PotRemovalRegressionInstrumentation"
+        android:targetPackage="com.kitchenos.connect" />
+    <instrumentation android:name="com.kitchenos.connect.tests.PotAutomationInstrumentation"
+        android:targetPackage="com.kitchenos.connect" />
+</manifest>

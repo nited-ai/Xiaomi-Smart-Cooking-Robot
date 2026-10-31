@@ -13,6 +13,8 @@ jobs:
         with:
           python-version: '3.12'
       - run: python scripts/check-publication.py
+      - run: python -m unittest discover -s tools/tests -p test_factory_access.py
+      - run: sudo python3 tools/tests/test_factory_broker.py
       - uses: actions/setup-node@v4
         with:
           node-version: '22'

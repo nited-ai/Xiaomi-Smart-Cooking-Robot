@@ -24,6 +24,9 @@ backend/public/auth.js
 *.zip
 *.log
 __pycache__/
+# Factory installer records belong outside the checkout.
+xiaomi-robot-session*.json
+factory-access.json
 .idea/
 .vscode/
 .DS_Store

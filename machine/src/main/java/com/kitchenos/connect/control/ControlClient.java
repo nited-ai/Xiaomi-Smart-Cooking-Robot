@@ -15,6 +15,8 @@ public final class ControlClient {
     private static ControlClient instance;
     public static synchronized ControlClient get(Context context){if(instance==null)instance=new ControlClient(context.getApplicationContext());return instance;}
     public static synchronized boolean hasActiveSession(){return instance!=null&&(instance.state.busy()||instance.state.uncertainRun||instance.program.active());}
+    public static synchronized boolean canReconfigureAccess(){return !hasActiveSession()&&(instance==null||!instance.state.rootChecking&&!instance.state.recovering);}
+    public static synchronized void invalidateAccess(){if(instance!=null){instance.state.rootVerified=false;instance.changed();}}
     private final Context app;
     private final Handler main=new Handler(Looper.getMainLooper());
     private final Object io=new Object();
@@ -112,18 +114,18 @@ public final class ControlClient {
     private void note(String text){state.lastEvent=text;events.insert(0,text+"\n");if(events.length()>1800)events.setLength(1800);android.util.Log.i("KitchenOSControl",text);changed();}
     public void checkRoot(){
         if(state.rootChecking||state.busy())return;
-        state.rootChecking=true;state.rootVerified=false;note("Root-Zugang wird ausschließlich mit einer Identitätsabfrage geprüft …");
+        state.rootChecking=true;state.rootVerified=false;note("Checking root identity only; appliance control stays closed …");
         new Thread(()->{
-            boolean verified=false;String failure="Root-Zugang fehlt. KitchenOS in Magisk freigeben und erneut prüfen.";Process check=null;
+            boolean verified=false;String failure="Root access missing. Renew the factory session or check this app's Magisk grant.";Process check=null;
             try{
-                check=new ProcessBuilder("/sbin/magisk","su","-c","id").redirectErrorStream(true).start();
-                if(!check.waitFor(25,TimeUnit.SECONDS))throw new IOException("Root-Abfrage hat nicht rechtzeitig geantwortet");
+                check=ControlAccess.open(app,"ID");
+                if(!check.waitFor(25,TimeUnit.SECONDS))throw new IOException("Root identity check timed out");
                 StringBuilder output=new StringBuilder();try(BufferedReader input=new BufferedReader(new InputStreamReader(check.getInputStream(),StandardCharsets.UTF_8))){String line;while((line=input.readLine())!=null&&output.length()<8192)output.append(line).append('\n');}
                 verified=check.exitValue()==0&&java.util.regex.Pattern.compile("(?m)^uid=0\\(root\\)(?:\\s|$)").matcher(output).find();
-            }catch(Exception e){failure="Root-Zugang konnte nicht bestätigt werden. Bitte Magisk-Freigabe für KitchenOS prüfen.";}
+            }catch(Exception e){failure="Root identity was not confirmed. Renew the factory session or check this app's Magisk grant.";}
             finally{if(check!=null){check.destroy();try{check.getInputStream().close();}catch(IOException ignored){}}}
             final boolean success=verified;final String error=failure;
-            main.post(()->{state.rootChecking=false;state.rootVerified=success;if(!success)state.userIssue="Der Gerätezugang ist nicht eingerichtet. Bitte die Freigabe in den Geräteeinstellungen prüfen.";note(success?"Root-Zugang für diese App bestätigt. Noch keine Steuerverbindung geöffnet.":error);});
+            main.post(()->{state.rootChecking=false;state.rootVerified=success;if(!success)state.userIssue="Device access is not ready. Check the installation guide and session status.";note(success?"Root identity confirmed for this app. Appliance control is still closed.":error);});
         },"KitchenOS-Root-Identity").start();
     }
     public void connect(){
@@ -135,7 +137,7 @@ public final class ControlClient {
             try{
                 File binary=new File(app.getApplicationInfo().nativeLibraryDir,"libkitchenos_bridge.so");
                 if(!binary.isFile())throw new IOException("Native Steuerung fehlt im APK");
-                Process created=new ProcessBuilder("/sbin/magisk","su","-c","exec "+quote(binary.getAbsolutePath())+" --serve").redirectErrorStream(true).start();
+                Process created=ControlAccess.open(app,"SERVE");
                 synchronized(io){process=created;writer=new BufferedWriter(new OutputStreamWriter(created.getOutputStream(),StandardCharsets.UTF_8));if(cancelled){writer.write("QUIT\n");writer.flush();}}
                 try(BufferedReader reader=new BufferedReader(new InputStreamReader(created.getInputStream(),StandardCharsets.UTF_8))){
                     String line;while((line=reader.readLine())!=null){final long receivedAt=SystemClock.elapsedRealtime();if(line.contains("\"type\":\"ready\""))reachedReady=true;enqueueReceived(line,receivedAt,epoch);}
@@ -263,7 +265,7 @@ public final class ControlClient {
             Runnable timeout=null;
             try{
                 File binary=new File(app.getApplicationInfo().nativeLibraryDir,"libkitchenos_bridge.so");
-                probe=new ProcessBuilder("/sbin/magisk","su","-c","exec "+quote(binary.getAbsolutePath())+" --probe-fast").redirectErrorStream(true).start();
+                probe=ControlAccess.open(app,"PROBE");
                 final Process running=probe;timeout=()->running.destroy();main.postDelayed(timeout,8000);
                 try(BufferedReader reader=new BufferedReader(new InputStreamReader(probe.getInputStream(),StandardCharsets.UTF_8))){
                     String line;while((line=reader.readLine())!=null)evidence.accept(line,SystemClock.elapsedRealtime());

@@ -12,7 +12,7 @@
 
 [See the interface](#see-what-we-mean) · [Why we built it](#the-pot-belongs-on-screen) · [Bring your recipes](#the-web-is-bigger-than-one-recipe-catalogue) · [Build with us](#for-the-people-who-want-to-open-it-up)
 
-**Set up your robot:** [Step-by-step guide (English)](docs/INSTALLATION.md) · [Schritt für Schritt (Deutsch)](docs/INSTALLATION.de.md)
+**Open up your robot:** [Installation guide](docs/INSTALLATION.md) · [How access works](docs/STOCK-INSTALL-AUDIT.md)
 
 </div>
 
@@ -119,14 +119,16 @@ We are working toward an appliance that explains its state, gives you direct
 controls, accepts recipes from outside its original ecosystem and can keep
 improving through an open community.
 
-Today this is a **developer preview for compatible, prepared hardware**. The
-reference setup uses privileged/root access. The repository contains the
-application and controller source; it does not yet provide a universal one-click
-root tool or consumer installer. If your first question is how to get access to
-the hardware, start with the **[device-access and installation guide](docs/INSTALLATION.md)**
-([Deutsch](docs/INSTALLATION.de.md)). It explains the factory Network ADB entry,
-the separate Magisk requirement, how to build/install the app and what to check
-before using the controls.
+Today this is a **developer preview** with a new experimental installation path:
+use the robot's factory root-ADB service to authorize a bounded local session,
+**without flashing firmware or installing Magisk**. Build, inspect, install,
+verify and revoke access with the included tool. A session can outlive the PC
+connection; it expires and needs renewal after reboot.
+
+Start with the **[complete installation guide](docs/INSTALLATION.md)**. The software
+path has dedicated emulator checks. Factory entry and fresh-PC authorization on
+a never-modified locked robot still need a supervised test; this is not yet a
+universal consumer installer. [Read the root-path audit](docs/STOCK-INSTALL-AUDIT.md).
 
 ## For the people who want to open it up
 
@@ -141,6 +143,7 @@ We want more people to be able to understand that system and build on it.
 | **Recipes beyond the vendor catalogue** | Android sharing/import in `phone/`, recipe and program contracts in `common/` |
 | **An optional service you can configure** | Authentication, private drafts, recipe preparation, pantry and AI integrations in `backend/` |
 | **A foundation to verify and extend** | Offline tests, source/profile integrity checks and CI |
+| **An owner-controlled access session** | Guarded Python installer, app-UID authentication, bounded local root broker and explicit revocation |
 
 The project grew under the internal name **KitchenOS** alongside **Kalomatik**.
 Those names remain in package identifiers and parts of the code; this public

@@ -1,17 +1,18 @@
 # Getting closer to your own hardware
 
 **Looking for the actual steps?** Use the new
-[device-access and installation guide](INSTALLATION.md) or
-[die deutsche Schritt-für-Schritt-Anleitung](INSTALLATION.de.md).
-It covers the factory hotspot / NET ADB entry, root checks, source build,
-APK installation, first checks and maintenance cleanup. This page records the
-evidence boundary behind those steps.
+[device-access and installation guide](INSTALLATION.md) and the
+[stock-install audit](STOCK-INSTALL-AUDIT.md). They cover the factory entry,
+experimental no-flash session, source build, installation, verification and
+revocation. Documentation is maintained in English.
 
 The reason for privileged access is practical: an ordinary Android application
 cannot open the appliance's MCU serial port. The control client needs that local
 connection to communicate with the motor / heater controller and receive state.
-The project-owned bridge is launched with `su`; the reference development setup
-used a Magisk runtime.
+The reference setup launched the project-owned bridge with Magisk `su`. The new
+factory-session candidate lets an owner-started local broker launch that same
+pinned bridge for the authenticated app UID. It uses existing root ADB, expires
+after a bounded lease and does not survive reboot.
 
 ## What has been observed
 
@@ -33,10 +34,11 @@ entry works on another firmware revision.
 - Offline tests and an explicit separation between software checks and physical
   validation.
 
-It currently supplies no ready-to-flash image, manufacturer APK, unlock payload,
-signing key or one-click root installer. Keeping those out of the initial source
-release avoids confusing a reference-device experiment with a supported installation
-route for everyone's machine.
+It also supplies the guarded Python installer and broker source. These prepare
+a development session without Magisk or partition writes. No ready-to-flash image,
+manufacturer APK, unlock payload or signing key is included. Factory entry on
+never-modified locked units and fresh-PC authorization remain unverified; the
+candidate is not a universal root installer.
 
 ## Help make the entry reproducible
 
